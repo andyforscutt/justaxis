@@ -1,0 +1,38 @@
+//Color Variables
+//Descriptive Color Variables
+$white: #fff;
+$lightblue: #20bbef;
+$black: #333;
+$yellow: #fade61;
+$clouds: #f1f3f4;
+
+$red: #c9072a;
+$navy: #001b69;
+
+$grey: #414141;
+$lightgrey: lightgrey;
+$greyalt: #bcbcbc;
+
+$blackalt: #1e1e1e;
+$blacktransparent: rgba(0, 0, 0, 0.5);
+
+// Fonts
+$font-name: "Raleway";
+$font-path: "~assets/fonts/Raleway-Regular.ttf";
+
+// $font-h-name: "Arvo";
+// $font-h-filename: arvo;
+
+// Font Stacks
+$stack-sans-serif: Arial, sans-serif;
+$stack-body: $font-name, $stack-sans-serif;
+// $stack-h: $font-h-name, $stack-sans-serif;
+
+// Media Query Break Points
+$bp-xxl: "screen and (min-width:1600px)";
+$bp-xl: "screen and (min-width:1400px)";
+$bp-lg: "screen and (max-width:991px)";
+$bp-md: "(max-width:860px)";
+$bp-sm: "(max-width:767px)";
+$bp-xs: "(max-width:600px)";
+$bp-xxs: "(max-width:479px)";

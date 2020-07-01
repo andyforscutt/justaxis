@@ -1,0 +1,35 @@
+@font-face {
+  font-family: $font-name;
+  src: url($font-path);
+}
+
+body {
+  color: $black;
+  font-family: $font-name;
+  line-height: 1.75;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:active,
+a:visited {
+  color: $lightblue;
+  text-decoration: none;
+}
+
+span.sr-only {
+  position: absolute;
+  left: -1000px;
+}
