@@ -6,7 +6,7 @@
       name="justaxis-contact-form"
       method="POST"
       data-netlify="true"
-      action="contact-us?msg=success"
+      action="contact-us-success"
     >
       <p>
         <label>Your Name: <input type="text" name="name" /></label>
