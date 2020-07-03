@@ -1,8 +1,13 @@
 <template>
   <div>
-    <h1>Contact Us</h1>
+    <h1>Contact Us {{ this.$route.params.msg }}</h1>
 
-    <form name="justaxis-contact-form" method="POST" data-netlify="true">
+    <form
+      name="justaxis-contact-form"
+      method="POST"
+      data-netlify="true"
+      action="contact-us?msg=success"
+    >
       <p>
         <label>Your Name: <input type="text" name="name" /></label>
       </p>
@@ -16,7 +21,7 @@
         <label>Date of Journey: <input type="date" name="date" /></label>
       </p>
       <p>
-        <label>Pickup Time: <input type="date" name="time" /></label>
+        <label>Pickup Time: <input type="time" name="time" /></label>
       </p>
       <p>
         <label>Pickup Location: <input type="text" name="pickup" /></label>
