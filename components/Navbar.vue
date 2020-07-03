@@ -3,12 +3,14 @@
     <div class="container flex nav-container">
       <div class="logo">
         <span class="sr-only">JusTaxis Logo</span>
-        <img
-          src="~assets/logo/justaxis-logo-250x125.png"
-          height="80"
-          width="160"
-          alt="JusTaxis Logo"
-        />
+        <nuxt-link to="/">
+          <img
+            src="~assets/logo/justaxis-logo-250x125.png"
+            height="80"
+            width="160"
+            alt="JusTaxis Logo"
+          />
+        </nuxt-link>
       </div>
 
       <button class="drawer-toggle" @click.prevent="toggle">
@@ -69,10 +71,6 @@ nav {
   background-color: $navy;
   height: 80px;
   width: 100%;
-
-  // @media #{$bp-md} {
-  //   height: 100px;
-  // }
 }
 
 .nav-container {
@@ -97,6 +95,14 @@ nav {
     font-size: 1.4rem;
     -webkit-font-smoothing: antialiased; /* Chrome, Safari */
     -moz-osx-font-smoothing: grayscale; /* Firefox */
+
+    transition: color 0.2s;
+
+    &:hover,
+    &:focus {
+      color: $red;
+      border-bottom: 2px solid $red;
+    }
   }
 }
 
@@ -147,7 +153,9 @@ li {
 }
 
 .drawer-toggle {
+  align-items: center;
   border: 1px solid transparent;
+  cursor: pointer;
   display: flex;
   justify-self: end;
   flex-direction: column;
@@ -155,7 +163,12 @@ li {
   height: 30px;
   margin-top: 30px;
   width: 40px;
-  cursor: pointer;
+  z-index: 999;
+
+  &:focus,
+  &:hover {
+    outline: none;
+  }
 
   .bar {
     width: 90%;
@@ -164,7 +177,10 @@ li {
   }
 
   .bar-middle {
-    width: 60%;
+    background-color: $black;
+    height: 4px;
+    text-align: center;
+    width: 70%;
   }
 
   @media (min-width: 768px) {

@@ -1,6 +1,38 @@
 <template>
   <div>
     <h1>Contact Us</h1>
+
+    <form name="justaxis-contact-form" method="POST" data-netlify="true">
+      <p>
+        <label>Your Name: <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Your Email: <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Contact Number: <input type="text" name="phone" /></label>
+      </p>
+      <p>
+        <label>Date of Journey: <input type="date" name="date" /></label>
+      </p>
+      <p>
+        <label>Pickup Time: <input type="date" name="time" /></label>
+      </p>
+      <p>
+        <label>Pickup Location: <input type="text" name="pickup" /></label>
+      </p>
+      <p>
+        <label>Drop Off Location: <input type="text" name="pickup" /></label>
+      </p>
+      <p>
+        <label
+          >Special Notes for the Driver: <textarea name="notes"></textarea>
+        </label>
+      </p>
+      <p>
+        <button type="submit">Send</button>
+      </p>
+    </form>
   </div>
 </template>
 
