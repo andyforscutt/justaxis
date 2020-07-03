@@ -1,14 +1,35 @@
+// @font-face {
+//   font-family: $font-name;
+//   src: url($font-path + $font-file);
+// }
+
 @font-face {
-  font-family: $font-name;
-  src: url($font-path);
+  font-family: Poppins-Regular;
+  src: url("~assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("~assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("~assets/fonts/Poppins-Bold.ttf");
 }
 
 [v-cloak] {
   display: none;
 }
 
+body,
 html {
+  height: 100%;
   color: $black;
+  font-family: Poppins-Regular, sans-serif;
+}
+
+html {
   //font-family: $font-name;
   font-family: Roboto;
   line-height: 1.75;

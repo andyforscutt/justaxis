@@ -32,7 +32,14 @@
         </li>
       </ul>
       <div class="phone">
-        <a href="tel:+441458860020">01458 860020</a>
+        <a href="tel:+441458860020"
+          ><svg class="icon-phone" viewBox="0 0 32 32" width="30" height="100%">
+            <path
+              d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"
+            ></path>
+          </svg>
+          01458&nbsp;860020</a
+        >
       </div>
     </div>
   </nav>
@@ -208,7 +215,29 @@ li {
       #5d4a1f 100%
     );
 
-  font-size: 2rem;
+  transition: background-color 0.6s linear;
+
+  &:hover,
+  &:focus {
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #ffffff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at left top,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+      );
+  }
+
+  font-size: 1.6rem;
   height: 62px;
   padding: 50px 15px;
   border-radius: 0 0 25% 25%;
@@ -218,7 +247,7 @@ li {
 
   a {
     color: lightgrey;
-    font-family: Roboto;
+    // font-family: Roboto;
     width: 100%;
   }
 
@@ -234,5 +263,9 @@ li {
     top: 0;
     right: 5%;
   }
+}
+
+svg.icon-phone {
+  fill: lightgrey;
 }
 </style>

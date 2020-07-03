@@ -8,34 +8,101 @@
       data-netlify="true"
       action="contact-us-success"
     >
-      <p>
-        <label>Your Name: <input type="text" name="name" /></label>
-      </p>
-      <p>
-        <label>Your Email: <input type="email" name="email" /></label>
-      </p>
-      <p>
-        <label>Contact Number: <input type="text" name="phone" /></label>
-      </p>
-      <p>
-        <label>Date of Journey: <input type="date" name="date" /></label>
-      </p>
-      <p>
-        <label>Pickup Time: <input type="time" name="time" /></label>
-      </p>
-      <p>
-        <label>Pickup Location: <input type="text" name="pickup" /></label>
-      </p>
-      <p>
-        <label>Drop Off Location: <input type="text" name="pickup" /></label>
-      </p>
+      <fieldset>
+        <div>
+          <input
+            id="enquiry"
+            type="radio"
+            name="format"
+            value="enquiry"
+            checked
+          />
+          <label for="enquiry">Enquiry</label>
+        </div>
+        <div>
+          <input id="booking" type="radio" name="format" value="booking" />
+          <label for="booking">Booking</label>
+        </div>
+      </fieldset>
+      <input type="hidden" name="subject" value="" />
       <p>
         <label
-          >Special Notes for the Driver: <textarea name="notes"></textarea>
+          ><span class="label">Name:</span> <input type="text" name="name"
+        /></label>
+      </p>
+
+      <p>
+        <label
+          ><span class="label">Email:</span> <input type="email" name="email"
+        /></label>
+      </p>
+
+      <p>
+        <label
+          ><span class="label">Contact Number:</span>
+          <input type="text" name="phone"
+        /></label>
+      </p>
+
+      <p>
+        <label
+          ><span class="label">Date of Journey:</span>
+          <input type="date" name="date"
+        /></label>
+      </p>
+
+      <hr />
+
+      <h2>Pick Up</h2>
+      <p>
+        <label
+          ><span class="label">Pickup Time:</span>
+          <input type="time" name="time"
+        /></label>
+      </p>
+
+      <p>
+        <label
+          ><span class="label">Pickup Address:</span>
+          <textarea name="pickup-address"></textarea>
         </label>
       </p>
+
       <p>
-        <button type="submit">Send</button>
+        <label
+          ><span class="label">Pickup Post Code:</span>
+          <input type="text" name="pickup-postcode"
+        /></label>
+      </p>
+
+      <hr />
+
+      <h2>Drop Off</h2>
+      <p>
+        <label
+          ><span class="label">Drop Off Address:</span>
+          <textarea name="dropoff-address"></textarea>
+        </label>
+      </p>
+
+      <p>
+        <label
+          ><span class="label">Drop Off Post Code:</span>
+          <input type="text" name="dropoff-postcode"
+        /></label>
+      </p>
+
+      <hr />
+
+      <p>
+        <label
+          ><span class="label">Special Notes for the Driver:</span>
+          <textarea name="notes"></textarea>
+        </label>
+      </p>
+
+      <p>
+        <button type="submit" class="btn">Send</button>
       </p>
     </form>
   </div>
@@ -47,4 +114,24 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@import "~assets/scss/variables";
+
+form {
+  background-color: $clouds;
+  padding: 20px;
+  margin-bottom: 80px;
+}
+
+label {
+  font-weight: 600;
+}
+
+fieldset {
+  border: none;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+}
+</style>
