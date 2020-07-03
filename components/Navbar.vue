@@ -70,9 +70,9 @@ nav {
   height: 80px;
   width: 100%;
 
-  @media #{$bp-md} {
-    height: 100px;
-  }
+  // @media #{$bp-md} {
+  //   height: 100px;
+  // }
 }
 
 .nav-container {
@@ -82,6 +82,7 @@ nav {
 .logo {
   flex-grow: 2;
   height: 80px;
+  align-self: flex-start;
 }
 
 .nav-menu {
@@ -192,6 +193,7 @@ li {
     );
 
   font-size: 2rem;
+  height: 62px;
   padding: 50px 15px;
   border-radius: 0 0 25% 25%;
   padding: 20px 10px;
@@ -201,6 +203,20 @@ li {
   a {
     color: lightgrey;
     font-family: Roboto;
+    width: 100%;
+  }
+
+  @media #{$bp-md-up} {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media #{$bp-md} {
+    position: absolute;
+    top: 0;
+    right: 5%;
   }
 }
 </style>

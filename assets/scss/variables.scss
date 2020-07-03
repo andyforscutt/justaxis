@@ -32,7 +32,10 @@ $stack-body: $font-name, $stack-sans-serif;
 $bp-xxl: "screen and (min-width:1600px)";
 $bp-xl: "screen and (min-width:1400px)";
 $bp-lg: "screen and (max-width:991px)";
+
+$bp-md-up: "screen and (min-width:861px)";
 $bp-md: "(max-width:860px)";
+
 $bp-sm: "(max-width:767px)";
 $bp-xs: "(max-width:600px)";
 $bp-xxs: "(max-width:479px)";

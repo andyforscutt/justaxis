@@ -3,9 +3,14 @@
   src: url($font-path);
 }
 
+[v-cloak] {
+  display: none;
+}
+
 body {
   color: $black;
-  font-family: $font-name;
+  //font-family: $font-name;
+  font-family: Roboto;
   line-height: 1.75;
   font-size: 18px;
   font-weight: 400;

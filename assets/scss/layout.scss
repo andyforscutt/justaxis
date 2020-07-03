@@ -36,13 +36,14 @@ footer {
   box-sizing: border-box;
   height: 100%;
   padding: 0 30px;
-  margin: 0 5%;
+  margin: 0 auto;
   max-width: 1400px;
   //width: 100%;
 
   @media #{$bp-md} {
     height: auto;
     padding: 0 15px;
+    margin: 0 5%;
   }
 }
 

@@ -1,5 +1,5 @@
 <template>
-  <div id="page-container">
+  <div v-cloak id="page-container">
     <Navbar />
     <div id="content-wrap" class="container">
       <Nuxt />

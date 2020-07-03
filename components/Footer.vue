@@ -20,14 +20,16 @@ export default {
 @import "~assets/scss/variables";
 
 footer {
-  width: 100%;
-  min-height: 80px;
   background-color: $navy;
   color: $white;
+  min-height: 80px;
+  width: 100%;
 }
+
 .footer-content {
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 100%;
   justify-content: space-between;
 
   a {
