@@ -146,11 +146,13 @@ nav {
 
 li {
   display: inline-block;
-  padding-right: 30px;
 
   @media #{$bp-md} {
     display: block;
     text-align: center;
+  }
+  @media #{$bp-md-up} {
+    padding-right: 30px;
   }
 }
 

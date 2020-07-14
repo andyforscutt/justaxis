@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <h1>Message Sent Successfully</h1>
 
     <p>
@@ -12,7 +12,7 @@
     <p>
       <nuxt-link to="/" class="btn btn-primary">Back to Home Page</nuxt-link>
     </p>
-  </div>
+  </main>
 </template>
 
 <script>

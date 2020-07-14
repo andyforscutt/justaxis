@@ -50,8 +50,8 @@ export default {
 footer {
   background-color: $navy;
   color: $white;
-  padding: 30px 0;
-  height: auto;
+  // padding: 30px 0;
+  // height: auto;
   width: 100%;
 }
 
@@ -60,6 +60,7 @@ footer {
   display: flex;
   font-size: 0.889rem;
   height: 100%;
+  padding-top: 30px;
   justify-content: space-between;
 
   @media #{$bp-md-up} {

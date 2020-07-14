@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main>
     <h1>Contact Us {{ this.$route.params.msg }}</h1>
 
     <form
@@ -11,108 +11,110 @@
     >
       <div v-if="errors.length">
         <strong>Please correct the following error(s):</strong>
-        <ul>
+        <ul class="red">
           <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
         </ul>
       </div>
-
-      <fieldset>
-        <div>
-          <input
-            id="enquiry"
-            type="radio"
-            name="format"
-            value="enquiry"
-            checked
-          />
-          <label for="enquiry">Enquiry</label>
-        </div>
-        <div>
-          <input id="booking" type="radio" name="format" value="booking" />
-          <label for="booking">Booking</label>
-        </div>
-      </fieldset>
-
       <div v-if="formCount == 0" class="personal-details">
-        <input type="hidden" name="subject" value="" />
+        <fieldset>
+          <div>
+            <input
+              id="enquiry"
+              v-model="type"
+              type="radio"
+              name="type"
+              value="enquiry"
+              checked
+            />
+            <label for="enquiry">Enquiry</label>
+          </div>
+          <div>
+            <input
+              id="booking"
+              v-model="type"
+              type="radio"
+              name="type"
+              value="booking"
+            />
+            <label for="booking">Booking</label>
+          </div>
+        </fieldset>
+
+        <input type="hidden" name="subject" :value="type" />
         <p>
-          <label
-            ><span class="label">Name:</span>
-            <input type="text" name="name" required
-          /></label>
+          <label for="name">Name:</label>
+          <input id="name" v-model="name" type="text" name="name" required />
         </p>
 
         <p>
-          <label
-            ><span class="label">Email:</span> <input type="email" name="email"
-          /></label>
+          <label for="email">Email:</label>
+          <input id="email" v-model="email" type="email" name="email" />
         </p>
 
         <p>
-          <label
-            ><span class="label">Contact Number:</span>
-            <input type="text" name="phone"
-          /></label>
+          <label for="phone">Contact Number:</label>
+          <input id="phone" v-model="phone" type="text" name="phone" />
         </p>
 
         <p>
-          <label
-            ><span class="label">Date of Journey:</span>
-            <input type="date" name="date"
-          /></label>
+          <label for="date">Date of Journey:</label>
+          <input id="date" v-model="date" type="date" name="date" />
         </p>
       </div>
 
       <div v-if="formCount == 1" class="pick-up">
         <h2>Pick Up</h2>
         <p>
-          <label
-            ><span class="label">Pickup Time:</span>
-            <input type="time" name="time"
-          /></label>
+          <label for="pickuptime">Pickup Time:</label>
+          <input id="pickuptime" v-model="pickupTime" type="time" name="time" />
         </p>
 
         <p>
-          <label
-            ><span class="label">Pickup Address:</span>
-            <textarea name="pickup-address"></textarea>
-          </label>
+          <label for="pickupaddress">Pickup Address:</label>
+          <textarea
+            id="pickupaddress"
+            v-model="pickupAddress"
+            name="pickup-address"
+          ></textarea>
         </p>
 
         <p>
-          <label
-            ><span class="label">Pickup Post Code:</span>
-            <input type="text" name="pickup-postcode"
-          /></label>
+          <label for="pickuppostcode">Pickup Post Code:</label>
+          <input
+            id="pickuppostcode"
+            v-model="pickupPostCode"
+            type="text"
+            name="pickup-postcode"
+          />
         </p>
       </div>
 
       <div v-if="formCount == 2" class="drop-off">
         <h2>Drop Off</h2>
         <p>
-          <label
-            ><span class="label">Drop Off Address:</span>
-            <textarea
-              v-model="dropoffAddress"
-              name="dropoff-address"
-            ></textarea>
-          </label>
+          <label for="droppoffaddress">Drop Off Address:</label>
+          <textarea
+            id="dropoffaddress"
+            v-model="dropoffAddress"
+            name="dropoff-address"
+          ></textarea>
         </p>
 
         <p>
-          <label
-            ><span class="label">Drop Off Post Code:</span>
-            <input type="text" name="dropoff-postcode"
-          /></label>
+          <label for="dropoffpostcode">Drop Off Post Code:</label>
+          <input
+            id="dropoffpostcode"
+            v-model="dropoffPostCode"
+            type="text"
+            name="dropoff-postcode"
+          />
         </p>
       </div>
 
       <div v-if="formCount == 3" class="notes">
         <p>
-          <label
-            ><span class="label">Special Notes for the Driver:</span>
-            <textarea name="notes"></textarea>
-          </label>
+          <label for="notes">Special Notes for the Driver:</label>
+          <textarea id="notes" v-model="notes" name="notes"></textarea>
         </p>
       </div>
 
@@ -136,7 +138,7 @@
         Send
       </button>
     </form>
-  </div>
+  </main>
 </template>
 
 <script>
@@ -146,14 +148,22 @@ export default {
     return {
       formCount: 0,
       errors: [],
+      type: null,
       name: null,
-      pickup: null,
+      email: null,
+      phone: null,
+      date: null,
+      pickupTime: null,
+      pickupAddress: null,
+      pickupPostCode: null,
       dropoffAddress: null,
+      dropoffPostCode: null,
+      notes: null,
     };
   },
   methods: {
     checkForm: function (e) {
-      if (this.name && this.age) {
+      if (this.name && this.email) {
         return true;
       }
 
@@ -162,7 +172,7 @@ export default {
       if (!this.name) {
         this.errors.push("Name required.");
       }
-      if (!this.pickup) {
+      if (!this.pickupAddress) {
         this.errors.push("Pick Up Address required.");
       }
       if (!this.dropoffAddress) {
@@ -208,6 +218,10 @@ form {
     line-height: 1.5;
     text-transform: uppercase;
   }
+}
+
+h2 {
+  margin-top: 0;
 }
 
 label {

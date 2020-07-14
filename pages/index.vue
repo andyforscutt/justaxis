@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <main>
     <h1>JusTaxis - Glastonbury Taxi Company</h1>
-  </div>
+  </main>
 </template>
 
 <script>
