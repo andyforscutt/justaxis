@@ -7,6 +7,7 @@ $yellow: #fade61;
 $clouds: #f1f3f4;
 
 $red: #c9072a;
+$firebrick: firebrick;
 $navy: #001b69;
 
 $grey: #414141;
@@ -30,8 +31,10 @@ $stack-body: $font-name, $stack-sans-serif;
 // $stack-h: $font-h-name, $stack-sans-serif;
 
 // Media Query Break Points
-$bp-xxl: "screen and (min-width:1600px)";
-$bp-xl: "screen and (min-width:1400px)";
+$bp-xxl-up: "screen and (min-width:1600px)";
+$bp-xl-up: "screen and (min-width:1400px)";
+
+$bp-lg-up: "screen and (min-width:991px)";
 $bp-lg: "screen and (max-width:991px)";
 
 $bp-md-up: "screen and (min-width:861px)";
@@ -40,3 +43,5 @@ $bp-md: "(max-width:860px)";
 $bp-sm: "(max-width:767px)";
 $bp-xs: "(max-width:600px)";
 $bp-xxs: "(max-width:479px)";
+
+//@media #{$bp-md} {

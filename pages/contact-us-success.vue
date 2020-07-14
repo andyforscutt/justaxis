@@ -10,7 +10,7 @@
     <p>Thank you for contacting JusTaxis from Glastonbury, Somerset.</p>
 
     <p>
-      <nuxt-link to="/" class="btn">Back to Home Page</nuxt-link>
+      <nuxt-link to="/" class="btn btn-primary">Back to Home Page</nuxt-link>
     </p>
   </div>
 </template>

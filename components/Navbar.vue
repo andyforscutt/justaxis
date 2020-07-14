@@ -6,7 +6,7 @@
         <nuxt-link to="/">
           <img
             src="~assets/logo/justaxis-logo-250x125.png"
-            height="80"
+            height="75"
             width="160"
             alt="JusTaxis Logo"
           />
@@ -31,15 +31,16 @@
           <nuxt-link to="/contact-us">Contact Us</nuxt-link>
         </li>
       </ul>
+
       <div class="phone">
-        <a href="tel:+441458860020"
-          ><svg class="icon-phone" viewBox="0 0 32 32" width="30" height="100%">
+        <a href="tel:+441458860020" class="phone-link">
+          <svg class="icon-phone" viewBox="0 0 32 32" width="30" height="100%">
             <path
               d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"
             ></path>
           </svg>
-          01458&nbsp;860020</a
-        >
+          01458&nbsp;860020
+        </a>
       </div>
     </div>
   </nav>
@@ -76,7 +77,7 @@ export default {
 
 nav {
   background-color: $navy;
-  height: 80px;
+  height: 75px;
   width: 100%;
 }
 
@@ -86,7 +87,7 @@ nav {
 
 .logo {
   flex-grow: 2;
-  height: 80px;
+  height: 75px;
   align-self: flex-start;
 }
 
@@ -99,7 +100,7 @@ nav {
 
   a {
     color: $lightgrey;
-    font-size: 1.4rem;
+
     -webkit-font-smoothing: antialiased; /* Chrome, Safari */
     -moz-osx-font-smoothing: grayscale; /* Firefox */
 
@@ -110,26 +111,25 @@ nav {
       color: $red;
       border-bottom: 2px solid $red;
     }
+    @media #{$bp-xxl-up} {
+      font-size: 1.4rem;
+    }
   }
 }
 
+.closed {
+  padding-left: 30px;
+}
 @media #{$bp-md} {
   .closed {
     background-color: $grey;
     opacity: 0;
     padding: 30px 0;
     transform: translateX(-1000px);
-
-    a {
-      color: $white;
-      font-size: 2.2em;
-      padding-bottom: 2px;
-    }
   }
 
   .open {
     background-color: $grey;
-    //height: 100vh;
     opacity: 1;
     padding: 30px 0;
     transform: translateX(0);
@@ -140,11 +140,6 @@ nav {
       color: $white;
       font-size: 2.2em;
       padding-bottom: 2px;
-
-      &:hover,
-      &:focus {
-        border-bottom: 2px solid $white;
-      }
     }
   }
 }
@@ -190,7 +185,7 @@ li {
     width: 70%;
   }
 
-  @media (min-width: 768px) {
+  @media #{$bp-md-up} {
     display: none;
   }
 }
@@ -238,30 +233,36 @@ li {
   }
 
   font-size: 1.6rem;
-  height: 62px;
+  //height: 62px;
   padding: 50px 15px;
   border-radius: 0 0 25% 25%;
   padding: 20px 10px;
   text-align: center;
-  width: 240px;
-
-  a {
-    color: lightgrey;
-    // font-family: Roboto;
-    width: 100%;
-  }
+  width: 45%;
+  max-width: 240px;
 
   @media #{$bp-md-up} {
-    height: 100px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 240px;
   }
 
   @media #{$bp-md} {
     position: absolute;
     top: 0;
     right: 5%;
+  }
+}
+
+.phone-link {
+  color: lightgrey;
+  padding: 25px 0;
+  width: 100%;
+
+  @media #{$bp-md-up} {
+    padding: 38px 0;
   }
 }
 

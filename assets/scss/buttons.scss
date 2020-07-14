@@ -1,0 +1,50 @@
+button,
+.btn {
+  border: none;
+  border-radius: 1px;
+  max-width: 100%;
+  cursor: pointer;
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.btn {
+  min-width: 100px;
+}
+
+.btn-primary,
+.btn-primary:visited,
+.btn-primary:active {
+  background-color: $navy;
+  color: $white;
+  padding: 12px;
+  transition: background-color 0.8s;
+
+  &:focus {
+    outline: 4px solid $black;
+  }
+
+  &:hover {
+    background-color: $firebrick;
+  }
+}
+
+.btn-default,
+.btn-default:visited,
+.btn-default:active {
+  background-color: $greyalt;
+  color: $white;
+  padding: 12px;
+  transition: background-color 0.8s;
+
+  &:focus {
+    outline: 4px solid $black;
+  }
+
+  &:hover {
+    background-color: $firebrick;
+  }
+}

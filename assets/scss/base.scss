@@ -27,19 +27,31 @@ html {
   height: 100%;
   color: $black;
   font-family: Poppins-Regular, sans-serif;
-}
-
-html {
-  //font-family: $font-name;
-  font-family: Roboto;
   line-height: 1.75;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
+
+  @media #{$bp-lg-up} {
+    font-size: 18px;
+  }
 }
 
-img {
+img,
+form,
+input,
+textarea,
+select {
+  box-sizing: border-box;
   max-width: 100%;
-  height: auto;
+  //height: auto;
+}
+
+textarea,
+input[type="text"],
+input[type="date"],
+input[type="email"] {
+  padding: 12px;
+  width: 100%;
 }
 
 ul {
@@ -58,4 +70,12 @@ a:visited {
 span.sr-only {
   position: absolute;
   left: -1000px;
+}
+
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
 }
