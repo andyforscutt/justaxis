@@ -28,6 +28,7 @@
             />
             <label for="enquiry">Enquiry</label>
           </div>
+
           <div>
             <input
               id="booking"
