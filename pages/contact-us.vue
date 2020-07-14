@@ -17,27 +17,32 @@
       </div>
       <div v-if="formCount == 0" class="personal-details">
         <fieldset>
+          <legend>What is your type of Request?</legend>
           <div>
-            <input
-              id="enquiry"
-              v-model="type"
-              type="radio"
-              name="type"
-              value="enquiry"
-              checked
-            />
-            <label for="enquiry">Enquiry</label>
+            <label>
+              <input
+                id="enquiry"
+                v-model="type"
+                type="radio"
+                name="type"
+                value="enquiry"
+                checked
+              />
+              Enquiry</label
+            >
           </div>
 
           <div>
-            <input
-              id="booking"
-              v-model="type"
-              type="radio"
-              name="type"
-              value="booking"
-            />
-            <label for="booking">Booking</label>
+            <label>
+              <input
+                id="booking"
+                v-model="type"
+                type="radio"
+                name="type"
+                value="booking"
+              />
+              Booking</label
+            >
           </div>
         </fieldset>
 
