@@ -144,6 +144,7 @@
         v-show="formCount == 3"
         type="submit"
         class="btn btn-primary send"
+        @click="subjectLine()"
       >
         Send
       </button>
@@ -159,15 +160,7 @@ export default {
       formCount: 0,
       errors: [],
       type: null,
-      subject:
-        "Website " +
-        this.type +
-        " for " +
-        this.name +
-        " - " +
-        this.date +
-        ", " +
-        this.time,
+      subject: null,
       name: null,
       email: null,
       phone: null,
@@ -181,6 +174,17 @@ export default {
     };
   },
   methods: {
+    subjectLine: function () {
+      return (this.subject =
+        "Website " +
+        this.type +
+        " for " +
+        this.name +
+        " - " +
+        this.date +
+        ", " +
+        this.time);
+    },
     checkForm: function (e) {
       if (this.name && this.email) {
         return true;
