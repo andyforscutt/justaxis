@@ -6,16 +6,19 @@
       name="justaxis-contact-form"
       method="POST"
       data-netlify="true"
-      action="contact-us-success"
+      action="/contact-us-success"
+      netlify-honeypot="bot-field"
       @submit="checkForm"
     >
+      <input type="hidden" name="form-name" value="justaxis-contact-form" />
+      <input type="hidden" name="subject" :value="type" />
       <div v-if="errors.length">
         <strong>Please correct the following error(s):</strong>
         <ul class="red">
           <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
         </ul>
       </div>
-      <div v-if="formCount == 0" class="personal-details">
+      <div v-show="formCount == 0" class="personal-details">
         <fieldset>
           <legend>What is your type of Request?</legend>
           <div>
@@ -25,10 +28,9 @@
                 v-model="type"
                 type="radio"
                 name="type"
-                value="enquiry"
+                value="Enquiry"
                 checked
-              />
-              Enquiry</label
+              />Enquiry</label
             >
           </div>
 
@@ -39,14 +41,12 @@
                 v-model="type"
                 type="radio"
                 name="type"
-                value="booking"
-              />
-              Booking</label
+                value="Booking"
+              />Booking</label
             >
           </div>
         </fieldset>
 
-        <input type="hidden" name="subject" :value="type" />
         <p>
           <label for="name">Name:</label>
           <input id="name" v-model="name" type="text" name="name" required />
@@ -68,7 +68,7 @@
         </p>
       </div>
 
-      <div v-if="formCount == 1" class="pick-up">
+      <div v-show="formCount == 1" class="pick-up">
         <h2>Pick Up</h2>
         <p>
           <label for="pickuptime">Pickup Time:</label>
@@ -95,7 +95,7 @@
         </p>
       </div>
 
-      <div v-if="formCount == 2" class="drop-off">
+      <div v-show="formCount == 2" class="drop-off">
         <h2>Drop Off</h2>
         <p>
           <label for="droppoffaddress">Drop Off Address:</label>
@@ -117,7 +117,7 @@
         </p>
       </div>
 
-      <div v-if="formCount == 3" class="notes">
+      <div v-show="formCount == 3" class="notes">
         <p>
           <label for="notes">Special Notes for the Driver:</label>
           <textarea id="notes" v-model="notes" name="notes"></textarea>
@@ -125,7 +125,7 @@
       </div>
 
       <button
-        v-if="formCount != 0"
+        v-show="formCount != 0"
         class="btn btn-default back"
         @click.prevent="formCount += -1"
       >
@@ -133,14 +133,18 @@
       </button>
 
       <button
-        v-if="formCount != 3"
+        v-show="formCount != 3"
         class="btn btn-primary next"
         @click.prevent="formCount += 1"
       >
         Next
       </button>
 
-      <button v-if="formCount == 3" type="submit" class="btn btn-primary send">
+      <button
+        v-show="formCount == 3"
+        type="submit"
+        class="btn btn-primary send"
+      >
         Send
       </button>
     </form>

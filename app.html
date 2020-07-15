@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+  <head {{ HEAD_ATTRS }}>
+    {{ HEAD }}
+  </head>
+  <body {{ BODY_ATTRS }}>
+    <form
+      name="justaxis-contact-form"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input type="hidden" name="form-name" value="justaxis-contact-form" />
+      <input type="hidden" name="subject" />
+      <input type="radio" name="type" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="phone" />
+      <input type="date" name="date" />
+
+      <input type="time" name="time" />
+      <textarea name="pickup-address"></textarea>
+      <input type="text" name="pickup-postcode" />
+
+      <textarea name="dropoff-address"></textarea>
+      <input type="text" name="dropoff-postcode" />
+
+      <textarea name="notes"></textarea>
+    </form>
+    {{ APP }}
+  </body>
+</html>
