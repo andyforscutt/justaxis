@@ -11,7 +11,7 @@
       @submit="checkForm"
     >
       <input type="hidden" name="form-name" value="justaxis-contact-form" />
-      <input type="hidden" name="subject" :value="type" />
+      <input type="hidden" name="subject" :value="subject" />
       <div v-if="errors.length">
         <strong>Please correct the following error(s):</strong>
         <ul class="red">
@@ -159,6 +159,15 @@ export default {
       formCount: 0,
       errors: [],
       type: null,
+      subject:
+        "Website " +
+        this.type +
+        " for " +
+        this.name +
+        " - " +
+        this.date +
+        ", " +
+        this.time,
       name: null,
       email: null,
       phone: null,
