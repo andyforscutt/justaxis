@@ -5,7 +5,7 @@
         <span class="sr-only">JusTaxis Logo</span>
         <nuxt-link to="/">
           <img
-            src="~assets/logo/justaxis-logo-250x125.png"
+            src="~assets/logo/justaxis-logo-160x75.png"
             height="75"
             width="160"
             alt="JusTaxis Logo"
@@ -15,7 +15,7 @@
 
       <button class="drawer-toggle" @click.prevent="toggle">
         <div class="bar"></div>
-        <div class="bar-middle"></div>
+        <div class="bar bar-middle"></div>
         <div class="bar"></div>
       </button>
 
@@ -34,7 +34,7 @@
 
       <div class="phone">
         <a href="tel:+441458860020" class="phone-link">
-          <svg class="icon-phone" viewBox="0 0 32 32" width="30" height="100%">
+          <svg class="icon-phone" viewBox="0 0 32 32" width="20" height="100%">
             <path
               d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"
             ></path>
@@ -99,7 +99,7 @@ nav {
   }
 
   a {
-    color: $lightgrey;
+    color: $clouds;
 
     -webkit-font-smoothing: antialiased; /* Chrome, Safari */
     -moz-osx-font-smoothing: grayscale; /* Firefox */
@@ -108,12 +108,17 @@ nav {
 
     &:hover,
     &:focus {
-      color: $red;
-      border-bottom: 2px solid $red;
+      color: $white;
+      border-bottom: 2px solid $white;
     }
     @media #{$bp-xxl-up} {
       font-size: 1.4rem;
     }
+  }
+
+  .nuxt-link-exact-active {
+    color: $white;
+    border-bottom: 2px solid $white;
   }
 }
 
@@ -158,14 +163,15 @@ li {
 
 .drawer-toggle {
   align-items: center;
+  background-color: firebrick;
   border: 1px solid transparent;
   cursor: pointer;
   display: flex;
   justify-self: end;
   flex-direction: column;
   justify-content: space-around;
-  height: 30px;
-  margin-top: 30px;
+  height: 40px;
+  //margin-top: 30px;
   width: 40px;
   z-index: 999;
 
@@ -175,17 +181,17 @@ li {
   }
 
   .bar {
-    width: 90%;
-    height: 4px;
-    background-color: $black;
+    width: 100%;
+    height: 5px;
+    background-color: $white;
   }
 
-  .bar-middle {
-    background-color: $black;
-    height: 4px;
-    text-align: center;
-    width: 70%;
-  }
+  // .bar-middle {
+  //   background-color: $black;
+  //   height: 4px;
+  //   text-align: center;
+  //   width: 70%;
+  // }
 
   @media #{$bp-md-up} {
     display: none;
@@ -193,58 +199,57 @@ li {
 }
 
 .phone {
-  // background-color: $yellow;
-
-  background: radial-gradient(
-      ellipse farthest-corner at right bottom,
-      #fedb37 0%,
-      #fdb931 8%,
-      #9f7928 30%,
-      #8a6e2f 40%,
-      transparent 80%
-    ),
-    radial-gradient(
-      ellipse farthest-corner at left top,
-      #ffffff 0%,
-      #ffffac 8%,
-      #d1b464 25%,
-      #5d4a1f 62.5%,
-      #5d4a1f 100%
-    );
-
-  transition: background-color 0.6s linear;
-
-  &:hover,
-  &:focus {
-    background: radial-gradient(
-        ellipse farthest-corner at right bottom,
-        #ffffff 0%,
-        #ffffac 8%,
-        #d1b464 25%,
-        #5d4a1f 62.5%,
-        #5d4a1f 100%
-      ),
-      radial-gradient(
-        ellipse farthest-corner at left top,
-        #fedb37 0%,
-        #fdb931 8%,
-        #9f7928 30%,
-        #8a6e2f 40%,
-        transparent 80%
-      );
-  }
-
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   //height: 62px;
   padding: 50px 15px;
-  border-radius: 0 0 25% 25%;
+  border-radius: 0 0 4px 4px;
   padding: 20px 10px;
   text-align: center;
   width: 45%;
   max-width: 240px;
 
   @media #{$bp-md-up} {
+    background: radial-gradient(
+        ellipse farthest-corner at right bottom,
+        #fedb37 0%,
+        #fdb931 8%,
+        #9f7928 30%,
+        #8a6e2f 40%,
+        transparent 80%
+      ),
+      radial-gradient(
+        ellipse farthest-corner at left top,
+        #ffffff 0%,
+        #ffffac 8%,
+        #d1b464 25%,
+        #5d4a1f 62.5%,
+        #5d4a1f 100%
+      );
+
+    transition: background-color 0.6s linear;
+
+    &:hover,
+    &:focus {
+      background: radial-gradient(
+          ellipse farthest-corner at right bottom,
+          #ffffff 0%,
+          #ffffac 8%,
+          #d1b464 25%,
+          #5d4a1f 62.5%,
+          #5d4a1f 100%
+        ),
+        radial-gradient(
+          ellipse farthest-corner at left top,
+          #fedb37 0%,
+          #fdb931 8%,
+          #9f7928 30%,
+          #8a6e2f 40%,
+          transparent 80%
+        );
+    }
+
     height: 90px;
+    border-radius: 0 0 25% 25%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -256,12 +261,21 @@ li {
     top: 0;
     right: 5%;
   }
+
+  @media #{$bp-xl-up} {
+    font-size: 1.4rem;
+  }
 }
 
 .phone-link {
-  color: lightgrey;
+  color: $clouds;
   padding: 25px 0;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    color: $white;
+  }
 
   @media #{$bp-md-up} {
     padding: 38px 0;
@@ -269,6 +283,6 @@ li {
 }
 
 svg.icon-phone {
-  fill: lightgrey;
+  fill: $clouds;
 }
 </style>

@@ -14,15 +14,20 @@
 #page-container {
   position: relative;
   min-height: 100vh;
-  background-color: $red;
+  background-color: $navy; //$clouds;
 }
 
 #content-wrap {
+  border-radius: 2px 2px 0 0;
   padding-bottom: 13rem; /* Footer height */
   background-color: $white;
-  border-radius: 4px;
+  //border-radius: 4px;
+  margin-top: 15px;
   min-height: 75vh;
-  margin-top: 70px;
+
+  -webkit-box-shadow: 3px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 10px 39px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 10px 39px 0px rgba(0, 0, 0, 0.75);
 
   @media #{$bp-md-up} {
     margin-top: 0;
@@ -31,13 +36,14 @@
 
 main {
   height: 100%;
+  padding-bottom: 30px;
 }
 
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 13rem; /* Footer height */
+  //height: 13rem; /* Footer height */
 }
 
 .container {
@@ -47,7 +53,7 @@ footer {
   padding: 0 30px;
   margin: 0 auto;
   max-width: 1400px;
-  //width: 100%;
+  width: 90%;
 
   @media #{$bp-md} {
     height: auto;
@@ -58,4 +64,60 @@ footer {
 
 .center {
   text-align: center;
+}
+
+//GRID
+.row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 20px;
+}
+
+div[class^="col-"] {
+  grid-column: span 12;
+}
+
+//Small
+@media (min-width: 576px) {
+  div.col-sm-4 {
+    grid-column: span 4;
+  }
+
+  div.col-sm-6 {
+    grid-column: span 6;
+  }
+
+  div.col-sm-8 {
+    grid-column: span 8;
+  }
+}
+
+//Medium
+@media (min-width: 768px) {
+  div.col-md-4 {
+    grid-column: span 4;
+  }
+
+  div.col-md-6 {
+    grid-column: span 6;
+  }
+
+  div.col-md-8 {
+    grid-column: span 8;
+  }
+}
+
+//Large
+@media (min-width: 992px) {
+  div.col-lg-4 {
+    grid-column: span 4;
+  }
+
+  div.col-lg-6 {
+    grid-column: span 6;
+  }
+
+  div.col-lg-8 {
+    grid-column: span 8;
+  }
 }

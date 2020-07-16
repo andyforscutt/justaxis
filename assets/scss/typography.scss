@@ -1,4 +1,37 @@
+h1,
+h2,
+h3,
+h4 {
+  display: inline-block;
+  line-height: 1.3;
+}
+
 h1 {
   font-size: 2.6rem;
-  line-height: 1.3;
+  //padding: 2.4rem 0;
+}
+
+h2 {
+  color: $white;
+  padding: 6px 12px;
+  background-color: firebrick;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  color: $white;
+  background-color: $navy;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+ul.list {
+  list-style: square;
+  color: firebrick;
+  padding-left: 20px;
+  margin-bottom: 20px;
 }

@@ -18,7 +18,8 @@
   src: url("~assets/fonts/Poppins-Bold.ttf");
 }
 
-[v-cloak] {
+[v-cloak],
+.hidden {
   display: none;
 }
 
