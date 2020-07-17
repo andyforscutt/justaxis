@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container footer-content">
-      <div class="schema_block schema_organization pull-left">
+      <div class="schema_block schema_organization">
         <div typeof="schema:LocalBusiness">
           <a
             class="schema_url"
@@ -24,6 +24,7 @@
             <div itemprop="postalCode">BA6 9TT</div>
             <div itemprop="addressCountry" class="schema_country">GB</div>
           </div>
+          <hr />
           <div class="schema_phone" property="schema:telephone">
             <svg
               viewBox="0 0 32 32"
@@ -43,8 +44,8 @@
       </div>
 
       <div class="privacy">
-        <div class="copyright">&copy; JusTaxis - Glastonbury</div>
-        <a href="/privacy-notice/">Privacy Notice</a>
+        <div class="copyright">&copy; JusTaxis</div>
+        <nuxt-link to="/privacy-notice">Privacy Notice</nuxt-link>
       </div>
     </div>
   </footer>
@@ -60,23 +61,23 @@ export default {
 @import "~assets/scss/variables";
 
 footer {
-  background-color: $navy; //firebrick;
+  background-color: $navy;
   color: $white;
-  // padding: 30px 0;
-  // height: auto;
   width: 100%;
 }
 
 .footer-content {
   align-items: center;
   display: flex;
+  flex-direction: column;
   font-size: 0.889rem;
   height: 100%;
   margin: 30px auto;
   justify-content: space-between;
 
-  @media #{$bp-md-up} {
+  @media #{$bp-sm-up} {
     font-size: 0.9375rem;
+    flex-direction: row;
   }
 
   a {
@@ -99,11 +100,31 @@ footer {
 
 .schema_block {
   color: lightgrey;
+  font-size: 0.89rem;
+  margin-bottom: 30px;
+  width: 100%;
+
+  @media #{$bp-sm-up} {
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+
+.privacy {
+  width: 100%;
+
+  @media #{$bp-sm-up} {
+    width: auto;
+  }
 }
 
 .schema_name,
 .schema_phone {
   color: $white;
   font-size: 1.2rem;
+}
+
+svg.icon-phone {
+  fill: $white;
 }
 </style>

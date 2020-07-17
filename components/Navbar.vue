@@ -83,6 +83,9 @@ nav {
 
 .nav-container {
   justify-content: space-evenly;
+  @media #{$bp-md-up} {
+    padding: 0 30px;
+  }
 }
 
 .logo {
@@ -109,7 +112,7 @@ nav {
     &:hover,
     &:focus {
       color: $white;
-      border-bottom: 2px solid $white;
+      border-bottom: 2px solid firebrick; //$white;
     }
     @media #{$bp-xxl-up} {
       font-size: 1.4rem;
@@ -118,7 +121,7 @@ nav {
 
   .nuxt-link-exact-active {
     color: $white;
-    border-bottom: 2px solid $white;
+    border-bottom: 2px solid firebrick;
   }
 }
 
@@ -181,7 +184,7 @@ li {
   }
 
   .bar {
-    width: 100%;
+    width: 30px;
     height: 5px;
     background-color: $white;
   }

@@ -85,3 +85,13 @@ span.sr-only {
 .pull-right {
   float: right;
 }
+
+.polaroid {
+  border: 5px solid $lightgrey;
+  border-radius: 2px;
+}
+
+.spikes .polaroid {
+  border: 5px solid $white;
+  border-radius: 2px;
+}

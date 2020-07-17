@@ -35,6 +35,7 @@
                 checked
               />Enquiry</label
             >
+            - Ask for a Quote
           </div>
 
           <div>
@@ -45,7 +46,7 @@
                 type="radio"
                 name="type"
                 value="Booking"
-              />Booking</label
+              />Direct Booking</label
             >
           </div>
         </fieldset>

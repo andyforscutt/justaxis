@@ -1,17 +1,22 @@
 //Color Variables
-//Descriptive Color Variables
 $white: #fff;
-$lightblue: #20bbef;
 $black: #333;
-$yellow: #fade61;
+$firebrick: firebrick;
 $clouds: #f1f3f4;
 
+//https://flatuicolors.com/palette/se
+$navy: #3c40c6; //free speach blue
+$blue: #575fcf; //dark perwinkle
+$lightblue: #0fbcf9; //spiro disco ball
+$lightgrey: #d2dae2; //hint of elusive blue
+$darkgrey: #485460; //goodnight
+
+//$lightblue: #20bbef;
+
 $red: #c9072a;
-$firebrick: firebrick;
-$navy: #3c40c6; //#001b69;
 
 $grey: #414141;
-$lightgrey: lightgrey;
+
 $greyalt: #bcbcbc;
 
 $blackalt: #1e1e1e;
@@ -34,13 +39,15 @@ $stack-body: $font-name, $stack-sans-serif;
 $bp-xxl-up: "screen and (min-width:1600px)";
 $bp-xl-up: "screen and (min-width:1400px)";
 
-$bp-lg-up: "screen and (min-width:991px)";
-$bp-lg: "screen and (max-width:991px)";
+$bp-lg-up: "screen and (min-width:992px)";
+$bp-lg: "screen and (max-width:992px)";
 
-$bp-md-up: "screen and (min-width:861px)";
-$bp-md: "(max-width:860px)";
+$bp-md-up: "screen and (min-width:768px)";
+$bp-md: "(max-width:768px)";
 
-$bp-sm: "(max-width:767px)";
+$bp-sm-up: "screen and (min-width:576px)";
+$bp-sm: "(max-width:576px)";
+
 $bp-xs: "(max-width:600px)";
 $bp-xxs: "(max-width:479px)";
 
