@@ -13,13 +13,14 @@
         </nuxt-link>
       </div>
 
-      <button class="drawer-toggle" @click.prevent="toggle">
+      <button class="drawer-toggle" :class="menuClass" @click.prevent="toggle">
         <div class="bar"></div>
         <div class="bar bar-middle"></div>
         <div class="bar"></div>
       </button>
 
       <ul class="nav-menu" :class="menuClass" @click="closeMenu">
+        <button class="cancel" aria-label="Close Menu">x</button>
         <li><nuxt-link to="/">Home</nuxt-link></li>
         <li><nuxt-link to="/about">About Us</nuxt-link></li>
         <li>
@@ -92,6 +93,10 @@ nav {
   flex-grow: 2;
   height: 75px;
   align-self: flex-start;
+
+  img {
+    min-width: 160px;
+  }
 }
 
 .nav-menu {
@@ -125,22 +130,31 @@ nav {
   }
 }
 
-.closed {
+ul.closed {
   padding-left: 30px;
+
+  .cancel {
+    display: none;
+  }
 }
 @media #{$bp-md} {
-  .closed {
+  ul.closed {
     background-color: $grey;
     opacity: 0;
     padding: 30px 0;
     transform: translateX(-1000px);
   }
 
-  .open {
+  ul.open {
     background-color: $grey;
     opacity: 1;
-    padding: 30px 0;
+    padding: 70px 0 30px 0;
     transform: translateX(0);
+    height: 100vh;
+    position: absolute;
+
+    top: 0;
+    left: 0;
 
     z-index: 100;
 
@@ -148,6 +162,16 @@ nav {
       color: $white;
       font-size: 2.2em;
       padding-bottom: 2px;
+    }
+
+    .cancel {
+      position: absolute;
+      color: $white;
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      top: 20px;
+      right: 5px;
     }
   }
 }
@@ -174,7 +198,7 @@ li {
   flex-direction: column;
   justify-content: space-around;
   height: 40px;
-  //margin-top: 30px;
+  margin-top: 14px;
   width: 40px;
   z-index: 999;
 
@@ -201,14 +225,18 @@ li {
   }
 }
 
+button.open {
+  opacity: 0;
+}
+
 .phone {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   //height: 62px;
-  padding: 50px 15px;
+  padding: 50px 10px;
   border-radius: 0 0 4px 4px;
   padding: 20px 10px;
-  text-align: center;
-  width: 45%;
+  text-align: right;
+  //width: 45%;
   max-width: 240px;
 
   @media #{$bp-md-up} {
@@ -229,6 +257,7 @@ li {
         #5d4a1f 100%
       );
 
+    text-align: center;
     transition: background-color 0.6s linear;
 
     &:hover,
@@ -249,6 +278,10 @@ li {
           #8a6e2f 40%,
           transparent 80%
         );
+    }
+
+    @media #{$bp-lg-up} {
+      font-size: 1.4rem;
     }
 
     height: 90px;

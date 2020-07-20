@@ -1,7 +1,7 @@
 .spikes {
   position: relative;
   background: $lightgrey;
-  padding: 30px 30px 60px 30px;
+  border-top: 6px solid $clouds;
 }
 
 .spikes::after {

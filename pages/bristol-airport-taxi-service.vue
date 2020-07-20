@@ -1,6 +1,6 @@
 <template>
   <main>
-    <article>
+    <article class="content">
       <h1>Bristol Airport Transfer Service</h1>
       <p>
         Etiam pretium lectus et massa convallis eleifend. Maecenas aliquam

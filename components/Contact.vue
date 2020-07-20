@@ -89,6 +89,7 @@
           <textarea
             id="pickupaddress"
             v-model="pickupAddress"
+            rows="4"
             name="pickup-address"
           ></textarea>
         </p>
@@ -111,6 +112,7 @@
           <textarea
             id="dropoffaddress"
             v-model="dropoffAddress"
+            rows="4"
             name="dropoff-address"
           ></textarea>
         </p>
@@ -129,7 +131,7 @@
       <div v-show="formCount == 3" class="notes">
         <p>
           <label for="notes">Special Notes for the Driver:</label>
-          <textarea id="notes" v-model="notes" name="notes"></textarea>
+          <textarea id="notes" v-model="notes" rows="4" name="notes"></textarea>
         </p>
       </div>
 
@@ -168,7 +170,7 @@ export default {
     return {
       formCount: 0,
       errors: [],
-      type: null,
+      type: "Enquiry",
       subject: null,
       name: null,
       email: null,

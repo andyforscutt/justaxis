@@ -18,7 +18,7 @@ button,
 .btn-primary,
 .btn-primary:visited,
 .btn-primary:active {
-  background-color: $navy;
+  background-color: $firebrick;
   color: $white;
   padding: 12px;
   transition: background-color 0.8s;
@@ -28,7 +28,7 @@ button,
   }
 
   &:hover {
-    background-color: $firebrick;
+    background-color: $red;
   }
 }
 
@@ -45,6 +45,6 @@ button,
   }
 
   &:hover {
-    background-color: $firebrick;
+    background-color: $red;
   }
 }
