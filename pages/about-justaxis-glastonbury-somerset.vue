@@ -115,18 +115,7 @@
               <li>Kilve court</li>
             </ul>
 
-            <h3>Railway Stations</h3>
-            <ul class="list">
-              <li>Castle Cary</li>
-              <li>Templecombe</li>
-              <li>Yeovil Penn Mill</li>
-              <li>Yeovil Junction</li>
-              <li>Taunton</li>
-              <li>Bridgwater</li>
-              <li>Highbridge</li>
-              <li>Bristol Temple Meads</li>
-              <li>Bath Spa</li>
-            </ul>
+            <Railways />
 
             <h3>Coach/Bus</h3>
             <ul class="list">
