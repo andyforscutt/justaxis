@@ -118,3 +118,31 @@ span.sr-only {
   border: 5px solid $white;
   border-radius: 2px;
 }
+
+/* add your IE10-IE11 css here */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  svg {
+    display: none;
+  }
+
+  .features {
+    list-style: square;
+
+    padding-left: 60px !important;
+    margin-bottom: 20px;
+
+    li {
+      color: $black;
+    }
+  }
+
+  .col-md-6,
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-md-8,
+  .col-lg-8 {
+    width: 66%;
+  }
+}

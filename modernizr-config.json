@@ -1,0 +1,14 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/svg",
+    "test/css/cssgrid",
+    "test/css/flexbox",
+    "test/css/gradients",
+    "test/svg/asimg",
+    "test/svg/inline"
+  ]
+}
