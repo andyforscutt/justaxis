@@ -8,7 +8,11 @@ h4 {
 
 h1 {
   font-size: 2.6rem;
-  //padding: 2.4rem 0;
+  margin: 1rem 0 1rem 0;
+
+  @media #{$bp-md-up} {
+    margin-top: 0;
+  }
 }
 
 h2 {
@@ -34,17 +38,4 @@ ul.list {
   color: firebrick;
   padding-left: 20px;
   margin-bottom: 20px;
-}
-
-form {
-  font-size: 0.941rem;
-}
-
-legend {
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-fieldset {
-  padding: 0;
 }

@@ -1,5 +1,18 @@
 <template>
   <div class="contact-form">
+    <div class="row">
+      <div class="col-md-8">
+        <p>
+          Need a Taxi in <strong>Glastonbury</strong> or the
+          <strong>Somerset</strong> area? Use the contact form below for
+          <strong>Taxi Enquiries</strong> or make a
+          <strong>Direct Booking</strong>.
+        </p>
+      </div>
+      <!--end col-->
+    </div>
+    <!--end row-->
+
     <form
       name="justaxis-contact-form"
       method="POST"
@@ -8,6 +21,7 @@
       netlify-honeypot="bot-field"
       @submit="checkForm"
     >
+      <a id="formtop" href="#"></a>
       <p class="hidden">
         <label
           >Do not fill this out if you're human: <input name="bot-field"
@@ -21,7 +35,7 @@
           <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
         </ul>
       </div>
-      <div v-show="formCount == 0" class="personal-details">
+      <div v-show="formCount == 0" class="contact-section contact-type">
         <fieldset>
           <legend>What is your type of Request?</legend>
           <div>
@@ -50,7 +64,10 @@
             >
           </div>
         </fieldset>
+      </div>
 
+      <div v-show="formCount == 1" class="contact-section personal-details">
+        <h2>Your Details</h2>
         <p>
           <label for="name">Name:</label>
           <input id="name" v-model="name" type="text" name="name" required />
@@ -65,15 +82,15 @@
           <label for="phone">Contact Number:</label>
           <input id="phone" v-model="phone" type="text" name="phone" />
         </p>
+      </div>
 
+      <div v-show="formCount == 2" class="contact-section date-time">
+        <h2>Date and Time</h2>
         <p>
           <label for="date">Date of Journey:</label>
           <input id="date" v-model="date" type="date" name="date" />
         </p>
-      </div>
 
-      <div v-show="formCount == 1" class="pick-up">
-        <h2>Pick Up</h2>
         <p>
           <label for="pickuptime">Pickup Time:</label>
           <input
@@ -83,6 +100,10 @@
             name="pickup-time"
           />
         </p>
+      </div>
+
+      <div v-show="formCount == 3" class="contact-section pick-up">
+        <h2>Pick Up</h2>
 
         <p>
           <label for="pickupaddress">Pickup Address:</label>
@@ -105,7 +126,7 @@
         </p>
       </div>
 
-      <div v-show="formCount == 2" class="drop-off">
+      <div v-show="formCount == 4" class="contact-section drop-off">
         <h2>Drop Off</h2>
         <p>
           <label for="droppoffaddress">Drop Off Address:</label>
@@ -128,9 +149,11 @@
         </p>
       </div>
 
-      <div v-show="formCount == 3" class="notes">
+      <div v-show="formCount == 5" class="contact-section notes">
         <p>
-          <label for="notes">Special Notes for the Driver:</label>
+          <label for="notes"
+            >If relevant, enter any special notes for the Driver:</label
+          >
           <textarea id="notes" v-model="notes" rows="4" name="notes"></textarea>
         </p>
       </div>
@@ -138,21 +161,21 @@
       <button
         v-show="formCount != 0"
         class="btn btn-default back"
-        @click.prevent="formCount += -1"
+        @click.prevent="formBtn(-1)"
       >
         Back
       </button>
 
       <button
-        v-show="formCount != 3"
+        v-show="formCount != 5"
         class="btn btn-primary next"
-        @click.prevent="formCount += 1"
+        @click.prevent="formBtn(1)"
       >
         Next
       </button>
 
       <button
-        v-show="formCount == 3"
+        v-show="formCount == 5"
         type="submit"
         class="btn btn-primary send"
         @click="subjectLine()"
@@ -166,6 +189,7 @@
 <script>
 export default {
   name: "Contact",
+  scrollToTop: true,
   data: function () {
     return {
       formCount: 0,
@@ -195,6 +219,10 @@ export default {
         this.date +
         ", " +
         this.pickupTime);
+    },
+    formBtn(count) {
+      window.scrollTo(0, 120);
+      return (this.formCount += count);
     },
     checkForm: function (e) {
       if (this.name && this.email) {
@@ -256,6 +284,7 @@ fieldset {
 input[type="radio"] {
   cursor: pointer;
   margin-right: 15px;
+  margin-bottom: 15px;
 }
 button span.back {
   display: inline;
@@ -265,5 +294,9 @@ span.next {
   display: inline !important;
 
   align-self: flex-end;
+}
+
+.contact-section {
+  margin-bottom: 20px;
 }
 </style>

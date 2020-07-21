@@ -1,0 +1,18 @@
+form {
+  border-top: 6px solid $lightgrey;
+  font-size: 0.941rem;
+
+  h2,
+  p {
+    margin: 0 0 10px 0;
+  }
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  padding: 0;
+}

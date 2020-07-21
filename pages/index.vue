@@ -1,18 +1,67 @@
 <template>
   <main>
-    <section class="content">
+    <section id="intro" class="content">
       <h1>JusTaxis - Glastonbury Taxi Company</h1>
+
+      <img
+        class="hero-img"
+        src="~assets/justaxis-glastonbury-taxi-service-2.jpg"
+        alt="JusTaxis Taxi company based in Glastonbury, Somerset"
+      />
+
+      <div class="row">
+        <div class="col-md-6 col-lg-8">
+          <p>
+            We are an established Taxi Company based in
+            <strong>Glastonbury</strong>, covering the whole of the
+            <strong>Somerset</strong> area.
+          </p>
+
+          <p>
+            We can provide professional Taxi services for local trips around
+            Glastonbury, Street and Wells as well as taking you further afield
+            to Bristol Airport or Railway stations such as Castle Carey or
+            Yeovil Junction. We are also a popular choice for the Glastonbury
+            Festival.
+          </p>
+
+          <p>
+            You can read more about JusTaxis and places of interest around
+            Somerset at our
+            <nuxt-link to="/about-justaxis-glastonbury-somerset"
+              >About Us</nuxt-link
+            >
+            page.
+          </p>
+
+          <Features />
+        </div>
+        <!--end col-->
+
+        <div class="col-md-6 col-lg-4">
+          <img
+            src="~assets/justaxis-glastonbury-town-hall-pickup.jpg"
+            alt="JusTaxis picking up at Glastonbury Town Hall in Somerset"
+          />
+        </div>
+        <!--end col-->
+      </div>
+      <!--end row-->
     </section>
 
     <section class="spikes">
-      <h2>Safe Travel</h2>
+      <h2>Airports and Railway Stations</h2>
       <p>
-        We take your safety seriously and we have taken steps to deal with
-        COVID-19.
+        We can take you to Bristol or Exeter Airports, or any Railway station
+        across Somerset.
       </p>
+
+      <Railways />
     </section>
 
-    <section class="content">
+    <SafeTravel />
+
+    <!--<section class="content">
       <h2>Airport Transfers</h2>
       <p>We can take you to Bristol airport from anywhere in Somerset.</p>
     </section>
@@ -20,22 +69,48 @@
     <section class="spikes">
       <h2>Railway Stations</h2>
       <p>We can take you to Bristol airport from anywhere in Somerset.</p>
-    </section>
+    </section>-->
 
-    <section class="content">
+    <section class="home-contact content">
       <h2>Contact Us</h2>
-      <Contact />
+      <div class="row">
+        <div class="col-md-6 col-lg-8">
+          <p>
+            Call us on <strong>01458&nbsp;860020</strong> to book a Taxi or
+            discuss how we can help with your journey.
+          </p>
+
+          <p>
+            You can also contact us via our
+            <strong
+              ><nuxt-link to="/contact-us">contact form</nuxt-link></strong
+            >
+            for Enquiries or Direct Taxi Bookings.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <img
+            src="~assets/justaxis-glastonbury-taxi-service-somerset.jpg"
+            alt="Taxi Company for Glastonbury, Street, Wells and whole of Somerset"
+          />
+        </div>
+      </div>
     </section>
   </main>
 </template>
 
 <script>
-import Contact from "~/components/Contact.vue";
+import Features from "~/components/Features.vue";
+import Railways from "~/components/Railways.vue";
+import SafeTravel from "~/components/SafeTravel.vue";
 
 export default {
   name: "Index",
   components: {
-    Contact,
+    Features,
+    SafeTravel,
+    Railways,
   },
   head() {
     return {
@@ -47,5 +122,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-// @import "~assets/scss/variables";
+@import "~assets/scss/variables";
+
+.hero-img {
+  margin-bottom: 30px;
+}
+
+.safe-travel {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.home-contact {
+  background-color: $lightgrey;
+  border-top: 6px solid $clouds;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
 </style>

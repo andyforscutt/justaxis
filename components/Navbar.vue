@@ -22,10 +22,9 @@
       <ul class="nav-menu" :class="menuClass" @click="closeMenu">
         <button class="cancel" aria-label="Close Menu">x</button>
         <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li><nuxt-link to="/about">About Us</nuxt-link></li>
         <li>
-          <nuxt-link to="/bristol-airport-taxi-service"
-            >Airport Transfers</nuxt-link
+          <nuxt-link to="/about-justaxis-glastonbury-somerset"
+            >About Us</nuxt-link
           >
         </li>
         <li>
@@ -94,6 +93,13 @@ nav {
   height: 75px;
   align-self: flex-start;
 
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    border: none;
+  }
+
   img {
     min-width: 160px;
   }
@@ -117,7 +123,8 @@ nav {
     &:hover,
     &:focus {
       color: $white;
-      border-bottom: 2px solid firebrick; //$white;
+      border-bottom: 2px solid $firebrick; //$white;
+      text-decoration: none;
     }
     @media #{$bp-xxl-up} {
       font-size: 1.4rem;
@@ -126,7 +133,7 @@ nav {
 
   .nuxt-link-exact-active {
     color: $white;
-    border-bottom: 2px solid firebrick;
+    border-bottom: 2px solid $firebrick;
   }
 }
 
@@ -184,13 +191,16 @@ li {
     text-align: center;
   }
   @media #{$bp-md-up} {
-    padding-right: 30px;
+    margin-right: 20px;
+  }
+  @media #{$bp-lg-up} {
+    margin-right: 30px;
   }
 }
 
 .drawer-toggle {
   align-items: center;
-  background-color: firebrick;
+  background-color: $firebrick;
   border: 1px solid transparent;
   cursor: pointer;
   display: flex;
@@ -200,6 +210,7 @@ li {
   height: 40px;
   margin-top: 14px;
   width: 40px;
+  transition: opacity 0.2s;
   z-index: 999;
 
   &:focus,
@@ -227,6 +238,7 @@ li {
 
 button.open {
   opacity: 0;
+  z-index: 1;
 }
 
 .phone {
@@ -259,6 +271,12 @@ button.open {
 
     text-align: center;
     transition: background-color 0.6s linear;
+    height: 90px;
+    border-radius: 0 0 25% 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
 
     &:hover,
     &:focus {
@@ -283,13 +301,6 @@ button.open {
     @media #{$bp-lg-up} {
       font-size: 1.4rem;
     }
-
-    height: 90px;
-    border-radius: 0 0 25% 25%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 240px;
   }
 
   @media #{$bp-md} {
@@ -311,6 +322,7 @@ button.open {
   &:hover,
   &:focus {
     color: $white;
+    border: none;
   }
 
   @media #{$bp-md-up} {
