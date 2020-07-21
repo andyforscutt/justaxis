@@ -41,13 +41,13 @@ $bp-xl-up: "screen and (min-width:1400px)";
 $bp-lg-up: "screen and (min-width:992px)";
 $bp-lg: "screen and (max-width:992px)";
 
-$bp-md-up: "screen and (min-width:768px)";
-$bp-md: "(max-width:768px)";
+$bp-md-up: "screen and (min-width:820px)";
+$bp-md: "(max-width:820px)";
 
 $bp-sm-up: "screen and (min-width:576px)";
 $bp-sm: "(max-width:576px)";
 
 $bp-xs: "(max-width:600px)";
-$bp-xxs: "(max-width:479px)";
+$bp-xxs: "(max-width:375px)";
 
 //@media #{$bp-md} {

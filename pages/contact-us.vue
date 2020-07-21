@@ -1,7 +1,7 @@
 <template>
   <main>
     <article class="content">
-      <h1>Contact JusTaxis</h1>
+      <h1>Contact Us</h1>
       <Contact />
     </article>
   </main>

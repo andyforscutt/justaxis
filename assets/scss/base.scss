@@ -87,7 +87,7 @@ a:active,
 a:visited {
   color: $navy;
   text-decoration: none;
-  transition: color 0.3s, border 0.3s;
+  transition: color 0.2s;
 
   &:hover,
   &:focus {

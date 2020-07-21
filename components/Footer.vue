@@ -25,7 +25,11 @@
             <div itemprop="addressCountry" class="schema_country">GB</div>
           </div>
           <hr />
-          <a href="tel:+441458860020" class="footer-phone">
+          <a
+            href="tel:+441458860020"
+            class="footer-phone"
+            title="Call to Book a Taxi"
+          >
             <div class="schema_phone" property="schema:telephone">
               <svg
                 viewBox="0 0 32 32"
@@ -84,7 +88,7 @@ footer {
 
   a {
     color: $clouds;
-    transition: color 0.3s, border-bottom 0.3s;
+    //transition: color 0.3s, border-bottom 0.3s;
 
     &:hover,
     &:focus {

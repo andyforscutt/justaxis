@@ -124,8 +124,14 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/scss/variables";
 
-.hero-img {
-  margin-bottom: 30px;
+@media #{$bp-md-up} {
+  .hero-img {
+    margin-bottom: 30px;
+  }
+}
+
+#intro {
+  margin-bottom: 20px;
 }
 
 .safe-travel {

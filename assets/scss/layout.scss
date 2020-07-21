@@ -30,7 +30,7 @@
   -moz-box-shadow: 3px 10px 39px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 10px 39px 0px rgba(0, 0, 0, 0.75);
 
-  @media #{$bp-sm-up} {
+  @media #{$bp-md-up} {
     margin-top: 0;
     padding-bottom: 13rem; /* Footer height */
   }

@@ -332,5 +332,9 @@ button.open {
 
 svg.icon-phone {
   fill: $clouds;
+
+  @media #{$bp-xxs} {
+    display: none;
+  }
 }
 </style>
