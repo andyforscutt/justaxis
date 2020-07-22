@@ -63,9 +63,16 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     //'bootstrap-vue/nuxt',
+    //Doc: https://github.com/nuxt-community/robots-module
+    "@nuxtjs/robots",
     // Doc: https://www.npmjs.com/package/@nuxtjs/sitemap
     "@nuxtjs/sitemap",
   ],
+  robots: {
+    UserAgent: "*",
+    Allow: "/",
+    Sitemap: "https://justaxis.netlify.app/sitemap.xml",
+  },
   sitemap: {
     hostname: "https://justaxis.netlify.app",
     gzip: true,
