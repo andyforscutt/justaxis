@@ -63,7 +63,13 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org
     //'bootstrap-vue/nuxt',
+    // Doc: https://www.npmjs.com/package/@nuxtjs/sitemap
+    "@nuxtjs/sitemap",
   ],
+  sitemap: {
+    hostname: "https://justaxis.netlify.app",
+    gzip: true,
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
