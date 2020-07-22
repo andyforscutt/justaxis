@@ -44,6 +44,11 @@ export default {
           content:
             "/_nuxt/img/justaxis-logo-glastonbury-taxi-company-160x75.png",
         },
+        {
+          hid: "og:site_name",
+          name: "og:site_name",
+          content: "JusTaxis Taxi Company Glastonbury Somerset",
+        },
       ],
     };
   },
