@@ -18,11 +18,11 @@
           </p>
 
           <p>
-            We can provide professional Taxi services for local trips around
-            Glastonbury, Street and Wells as well as taking you further afield
-            to Bristol Airport or Railway stations such as Castle Carey or
-            Yeovil Junction. We are also a popular choice for the Glastonbury
-            Festival.
+            We provide professional Taxi services around the Somerset area
+            including Glastonbury, Street and the city of Wells. JusTaxis can
+            take you further afield to Bristol Airport or Railway stations such
+            as Castle Carey or Yeovil Junction. We are also a popular choice for
+            the Glastonbury Festival.
           </p>
 
           <p>
@@ -55,6 +55,8 @@
         We can take you to Bristol or Exeter Airports, or any Railway station
         across Somerset.
       </p>
+
+      <Airports />
 
       <Railways />
     </section>
@@ -93,6 +95,7 @@
 
 <script>
 import Features from "~/components/Features.vue";
+import Airports from "~/components/Airports.vue";
 import Railways from "~/components/Railways.vue";
 import SafeTravel from "~/components/SafeTravel.vue";
 
@@ -102,6 +105,7 @@ export default {
     Features,
     SafeTravel,
     Railways,
+    Airports,
   },
   head() {
     return {

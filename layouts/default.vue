@@ -41,7 +41,8 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content: "~assets/logo/justaxis-logo-160x75.png",
+          content:
+            "/_nuxt/img/justaxis-logo-glastonbury-taxi-company-160x75.png",
         },
       ],
     };

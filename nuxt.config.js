@@ -71,10 +71,10 @@ export default {
   robots: {
     UserAgent: "*",
     Allow: "/",
-    Sitemap: "https://justaxis.netlify.app/sitemap.xml",
+    Sitemap: "https://justaxis.biz/sitemap.xml",
   },
   sitemap: {
-    hostname: "https://justaxis.netlify.app",
+    hostname: "https://justaxis.biz",
     gzip: true,
   },
   /*

@@ -14,15 +14,13 @@
 #page-container {
   position: relative;
   min-height: 100vh;
-  background-color: $navy; //$clouds;
+  background-color: $navy;
 }
 
 #content-wrap {
-  //border-radius: 2px 2px 0 0;
   border-top: 6px solid $firebrick;
   padding-bottom: 17rem; /* Footer height */
   background-color: $white;
-  //border-radius: 4px;
   margin-top: 30px;
   min-height: 75vh;
 
@@ -30,9 +28,12 @@
   -moz-box-shadow: 3px 10px 39px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 3px 10px 39px 0px rgba(0, 0, 0, 0.75);
 
+  @media #{$bp-sm-up} {
+    padding-bottom: 13rem; /* Footer height */
+  }
+
   @media #{$bp-md-up} {
     margin-top: 0;
-    padding-bottom: 13rem; /* Footer height */
   }
 }
 
@@ -54,14 +55,12 @@ footer {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 100%;
-  //padding: 0 30px;
   margin: 0 auto;
   max-width: 1400px;
   width: 90%;
 
   @media #{$bp-md} {
     height: auto;
-    //padding: 0 15px;
     margin: 0 5%;
   }
 }

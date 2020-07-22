@@ -115,6 +115,8 @@
               <li>Kilve court</li>
             </ul>
 
+            <Airports />
+
             <Railways />
 
             <h3>Coach/Bus</h3>
@@ -143,8 +145,8 @@
         <div class="row">
           <div class="col-lg-8">
             <p>
-              We can take you anywhere you need to get to in the Somerset and
-              Bristol area.
+              We can take you anywhere you need to get to in the
+              <strong>Somerset</strong> area.
               <nuxt-link to="/contact-us">Contact Us</nuxt-link> to make a Taxi
               Enquiry or Direct Booking, or call us on
               <a href="tel:+441458860020" class="call-taxi">01458&nbsp;860020</a
@@ -180,7 +182,7 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content: "~assets/about/taxis-street-glastonbury-somerset.jpg",
+          content: "/_nuxt/img/taxis-street-glastonbury-somerset.jpg",
         },
       ],
     };

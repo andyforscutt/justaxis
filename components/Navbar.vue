@@ -5,7 +5,7 @@
         <span class="sr-only">JusTaxis Logo</span>
         <nuxt-link to="/">
           <img
-            src="~assets/logo/justaxis-logo-160x75.png"
+            src="~assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png"
             height="75"
             width="160"
             alt="JusTaxis Logo"
@@ -201,16 +201,13 @@ li {
 }
 
 .drawer-toggle {
-  //align-items: center;
   background-color: $firebrick;
   border: 1px solid transparent;
   cursor: pointer;
   display: block;
   justify-self: end;
-  // flex-direction: column;
-  // justify-content: space-around;
   height: 40px;
-  margin-top: 14px;
+  margin-top: 13px;
   padding: 5px;
   width: 40px;
   transition: opacity 0.2s;
@@ -225,8 +222,12 @@ li {
     display: block;
     width: 100%;
     height: 5px;
-    margin-bottom: 7px;
+    margin-bottom: 5px;
     background-color: $white;
+  }
+
+  .bar:last-child {
+    margin-bottom: 0 !important;
   }
 
   @media #{$bp-md-up} {

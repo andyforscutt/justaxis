@@ -30,7 +30,7 @@
       <input type="hidden" name="form-name" value="justaxis-contact-form" />
       <input type="hidden" name="subject" :value="subject" />
       <div v-if="errors.length">
-        <strong>Please correct the following error(s):</strong>
+        <strong>Please go back and correct the following error(s):</strong>
         <ul class="red">
           <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
         </ul>
@@ -75,12 +75,18 @@
 
         <p>
           <label for="email">Email:</label>
-          <input id="email" v-model="email" type="email" name="email" />
+          <input
+            id="email"
+            v-model="email"
+            type="email"
+            name="email"
+            required
+          />
         </p>
 
         <p>
           <label for="phone">Contact Number:</label>
-          <input id="phone" v-model="phone" type="text" name="phone" />
+          <input id="phone" v-model="phone" type="text" name="phone" required />
         </p>
       </div>
 
@@ -88,7 +94,7 @@
         <h3>Date and Time</h3>
         <p>
           <label for="date">Date of Journey:</label>
-          <input id="date" v-model="date" type="date" name="date" />
+          <input id="date" v-model="date" type="date" name="date" required />
         </p>
 
         <p>
@@ -98,6 +104,7 @@
             v-model="pickupTime"
             type="time"
             name="pickup-time"
+            required
           />
         </p>
       </div>
@@ -112,6 +119,7 @@
             v-model="pickupAddress"
             rows="4"
             name="pickup-address"
+            required
           ></textarea>
         </p>
 
@@ -135,6 +143,7 @@
             v-model="dropoffAddress"
             rows="4"
             name="dropoff-address"
+            required
           ></textarea>
         </p>
 
@@ -230,13 +239,28 @@ export default {
       }
 
       this.errors = [];
-
+      //Validation - Personal Details
       if (!this.name) {
         this.errors.push("Name required.");
       }
+      if (!this.email) {
+        this.errors.push("Email required.");
+      }
+      if (!this.phone) {
+        this.errors.push("Phone required.");
+      }
+      //Validation - Date/Time
+      if (!this.date) {
+        this.errors.push("Date required.");
+      }
+      if (!this.pickupTime) {
+        this.errors.push("Pick Up Time required.");
+      }
+      //Validation - Pickup
       if (!this.pickupAddress) {
         this.errors.push("Pick Up Address required.");
       }
+      //Validation - Drop Off
       if (!this.dropoffAddress) {
         this.errors.push("Drop Off Address required.");
       }
