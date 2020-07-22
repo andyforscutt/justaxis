@@ -169,7 +169,18 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "About JusTaxis - taxi company from Glastonbury, Somerset.",
+          content:
+            "About JusTaxis - Taxi company from Glastonbury, Somerset. 01458 860020",
+        },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content: "About JusTaxis - Taxi Company Glastonbury Somerset",
+        },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: "~assets/about/taxis-street-glastonbury-somerset.jpg",
         },
       ],
     };

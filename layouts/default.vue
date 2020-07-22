@@ -28,6 +28,21 @@ export default {
           content:
             "JusTaxis - Taxi service for Glastonbury, Street, Wells and the whole of Somerset. 01458 860020",
         },
+        {
+          hid: "og:locale",
+          name: "og:locale",
+          content: "en_GB",
+        },
+        {
+          hid: "og:type",
+          name: "og:type",
+          content: "website",
+        },
+        {
+          hid: "og:image",
+          name: "og:image",
+          content: "~assets/logo/justaxis-logo-160x75.png",
+        },
       ],
     };
   },

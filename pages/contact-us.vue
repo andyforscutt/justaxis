@@ -23,7 +23,13 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "Contact JusTaxis - Make a Taxi Booking or Enquiry for our Somerset Taxi Service.",
+            "Contact JusTaxis, Glastonbury - Make a Taxi Booking or Enquiry for our Somerset Taxi Service. 01458 860020",
+        },
+        {
+          hid: "og:title",
+          name: "og:title",
+          content:
+            "Contact JusTaxis, Taxi Company Glastonbury Somerset 01458 860020",
         },
       ],
     };
