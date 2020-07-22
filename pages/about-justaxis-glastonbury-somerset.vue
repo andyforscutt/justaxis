@@ -146,7 +146,9 @@
               We can take you anywhere you need to get to in the Somerset and
               Bristol area.
               <nuxt-link to="/contact-us">Contact Us</nuxt-link> to make a Taxi
-              enquiry or direct Booking.
+              Enquiry or Direct Booking, or call us on
+              <a href="tel:+441458860020" class="call-taxi">01458&nbsp;860020</a
+              >.
             </p>
           </div>
           <!--end col-->

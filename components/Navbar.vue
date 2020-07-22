@@ -14,23 +14,25 @@
       </div>
 
       <button class="drawer-toggle" :class="menuClass" @click.prevent="toggle">
-        <div class="bar"></div>
-        <div class="bar bar-middle"></div>
-        <div class="bar"></div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
 
-      <ul class="nav-menu" :class="menuClass" @click="closeMenu">
+      <div class="nav-menu" :class="menuClass" @click="closeMenu">
         <button class="cancel" aria-label="Close Menu">x</button>
-        <li><nuxt-link to="/">Home</nuxt-link></li>
-        <li>
-          <nuxt-link to="/about-justaxis-glastonbury-somerset"
-            >About Us</nuxt-link
-          >
-        </li>
-        <li>
-          <nuxt-link to="/contact-us">Contact Us</nuxt-link>
-        </li>
-      </ul>
+        <ul>
+          <li><nuxt-link to="/">Home</nuxt-link></li>
+          <li>
+            <nuxt-link to="/about-justaxis-glastonbury-somerset"
+              >About Us</nuxt-link
+            >
+          </li>
+          <li>
+            <nuxt-link to="/contact-us">Contact Us</nuxt-link>
+          </li>
+        </ul>
+      </div>
 
       <div class="phone">
         <a href="tel:+441458860020" class="phone-link">
@@ -137,7 +139,7 @@ nav {
   }
 }
 
-ul.closed {
+div.closed {
   padding-left: 30px;
 
   .cancel {
@@ -145,14 +147,14 @@ ul.closed {
   }
 }
 @media #{$bp-md} {
-  ul.closed {
+  div.closed {
     background-color: $grey;
     opacity: 0;
     padding: 30px 0;
     transform: translateX(-1000px);
   }
 
-  ul.open {
+  div.open {
     background-color: $grey;
     opacity: 1;
     padding: 70px 0 30px 0;
@@ -199,16 +201,17 @@ li {
 }
 
 .drawer-toggle {
-  align-items: center;
+  //align-items: center;
   background-color: $firebrick;
   border: 1px solid transparent;
   cursor: pointer;
-  display: flex;
+  display: block;
   justify-self: end;
-  flex-direction: column;
-  justify-content: space-around;
+  // flex-direction: column;
+  // justify-content: space-around;
   height: 40px;
   margin-top: 14px;
+  padding: 5px;
   width: 40px;
   transition: opacity 0.2s;
   z-index: 999;
@@ -219,17 +222,12 @@ li {
   }
 
   .bar {
-    width: 30px;
+    display: block;
+    width: 100%;
     height: 5px;
+    margin-bottom: 7px;
     background-color: $white;
   }
-
-  // .bar-middle {
-  //   background-color: $black;
-  //   height: 4px;
-  //   text-align: center;
-  //   width: 70%;
-  // }
 
   @media #{$bp-md-up} {
     display: none;

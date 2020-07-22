@@ -1,6 +1,6 @@
 <template>
   <div class="contact-form">
-    <div class="row">
+    <div v-show="formCount == 0" class="row">
       <div class="col-md-8">
         <p>
           Need a Taxi in <strong>Glastonbury</strong> or the
@@ -67,7 +67,7 @@
       </div>
 
       <div v-show="formCount == 1" class="contact-section personal-details">
-        <h2>Your Details</h2>
+        <h3>Your Details</h3>
         <p>
           <label for="name">Name:</label>
           <input id="name" v-model="name" type="text" name="name" required />
@@ -85,7 +85,7 @@
       </div>
 
       <div v-show="formCount == 2" class="contact-section date-time">
-        <h2>Date and Time</h2>
+        <h3>Date and Time</h3>
         <p>
           <label for="date">Date of Journey:</label>
           <input id="date" v-model="date" type="date" name="date" />
@@ -103,7 +103,7 @@
       </div>
 
       <div v-show="formCount == 3" class="contact-section pick-up">
-        <h2>Pick Up</h2>
+        <h3>Pick Up</h3>
 
         <p>
           <label for="pickupaddress">Pickup Address:</label>
@@ -127,7 +127,7 @@
       </div>
 
       <div v-show="formCount == 4" class="contact-section drop-off">
-        <h2>Drop Off</h2>
+        <h3>Drop Off</h3>
         <p>
           <label for="droppoffaddress">Drop Off Address:</label>
           <textarea
@@ -221,7 +221,7 @@ export default {
         this.pickupTime);
     },
     formBtn(count) {
-      window.scrollTo(0, 120);
+      window.scrollTo(0, 0);
       return (this.formCount += count);
     },
     checkForm: function (e) {
@@ -269,7 +269,8 @@ form {
   }
 }
 
-h2 {
+h2,
+h3 {
   margin-top: 0;
 }
 
@@ -292,7 +293,6 @@ button span.back {
 
 span.next {
   display: inline !important;
-
   align-self: flex-end;
 }
 

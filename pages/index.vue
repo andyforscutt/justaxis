@@ -61,23 +61,14 @@
 
     <SafeTravel />
 
-    <!--<section class="content">
-      <h2>Airport Transfers</h2>
-      <p>We can take you to Bristol airport from anywhere in Somerset.</p>
-    </section>
-
-    <section class="spikes">
-      <h2>Railway Stations</h2>
-      <p>We can take you to Bristol airport from anywhere in Somerset.</p>
-    </section>-->
-
     <section class="home-contact content">
       <h2>Contact Us</h2>
       <div class="row">
         <div class="col-md-6 col-lg-8">
           <p>
-            Call us on <strong>01458&nbsp;860020</strong> to book a Taxi or
-            discuss how we can help with your journey.
+            Call us on
+            <a href="tel:+441458860020" class="call-taxi">01458&nbsp;860020</a>
+            to book a Taxi or discuss how we can help with your journey.
           </p>
 
           <p>

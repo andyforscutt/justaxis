@@ -3,12 +3,8 @@
     <div class="container footer-content">
       <div class="schema_block schema_organization">
         <div typeof="schema:LocalBusiness">
-          <a
-            class="schema_url"
-            target="_blank"
-            property="schema:url"
-            href="https://justaxis.biz/"
-          >
+          <!--when live href="https://justaxis.biz/" -->
+          <a class="schema_url" property="schema:url" href="#">
             <div class="schema_name" property="schema:name">
               JusTaxis
             </div></a
