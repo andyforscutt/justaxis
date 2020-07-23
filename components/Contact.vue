@@ -29,12 +29,16 @@
       </p>
       <input type="hidden" name="form-name" value="justaxis-contact-form" />
       <input type="hidden" name="subject" :value="subject" />
+
       <div v-if="errors.length">
-        <strong>Please go back and correct the following error(s):</strong>
-        <ul class="red">
+        <strong class="red"
+          >Please go back and correct the following error(s):</strong
+        >
+        <ul class="error-list red">
           <li v-for="(error, index) in errors" :key="index">{{ error }}</li>
         </ul>
       </div>
+
       <div v-show="formCount == 0" class="contact-section contact-type">
         <fieldset>
           <legend>What is your type of Request?</legend>
@@ -70,7 +74,7 @@
         <h3>Your Details</h3>
         <p>
           <label for="name">Name:</label>
-          <input id="name" v-model="name" type="text" name="name" required />
+          <input id="name" v-model="name" type="text" name="name" />
         </p>
 
         <p>
@@ -80,13 +84,13 @@
             v-model="email"
             type="email"
             name="email"
-            required
+            @blur="validateEmail"
           />
         </p>
 
         <p>
           <label for="phone">Contact Number:</label>
-          <input id="phone" v-model="phone" type="text" name="phone" required />
+          <input id="phone" v-model="phone" type="text" name="phone" />
         </p>
       </div>
 
@@ -94,7 +98,7 @@
         <h3>Date and Time</h3>
         <p>
           <label for="date">Date of Journey:</label>
-          <input id="date" v-model="date" type="date" name="date" required />
+          <input id="date" v-model="date" type="date" name="date" />
         </p>
 
         <p>
@@ -104,7 +108,6 @@
             v-model="pickupTime"
             type="time"
             name="pickup-time"
-            required
           />
         </p>
       </div>
@@ -119,7 +122,6 @@
             v-model="pickupAddress"
             rows="4"
             name="pickup-address"
-            required
           ></textarea>
         </p>
 
@@ -143,7 +145,6 @@
             v-model="dropoffAddress"
             rows="4"
             name="dropoff-address"
-            required
           ></textarea>
         </p>
 
@@ -233,12 +234,24 @@ export default {
       window.scrollTo(0, 0);
       return (this.formCount += count);
     },
-    checkForm: function (e) {
-      if (this.name && this.email) {
+    validateEmail: function () {
+      if (/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(this.email)) {
+        this.errors.pop("You have entered an invalid email address.");
         return true;
       }
 
+      if (
+        this.errors.indexOf("You have entered an invalid email address.") === -1
+      ) {
+        this.errors.push("You have entered an invalid email address.");
+        return false;
+      }
+    },
+    checkForm: function (e) {
       this.errors = [];
+
+      this.validateEmail();
+
       //Validation - Personal Details
       if (!this.name) {
         this.errors.push("Name required.");
@@ -264,7 +277,6 @@ export default {
       if (!this.dropoffAddress) {
         this.errors.push("Drop Off Address required.");
       }
-
       e.preventDefault();
     },
   },
@@ -322,5 +334,13 @@ span.next {
 
 .contact-section {
   margin-bottom: 20px;
+}
+
+.error-list {
+  margin-bottom: 15px;
+}
+
+.red {
+  color: $red;
 }
 </style>
