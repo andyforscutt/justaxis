@@ -21,7 +21,7 @@
             We provide professional Taxi services around the Somerset area
             including Glastonbury, Street and the city of Wells. JusTaxis can
             take you further afield to Bristol Airport or Railway stations such
-            as Castle Carey or Yeovil Junction. We are also a popular choice for
+            as Castle Cary or Yeovil Junction. We are also a popular choice for
             the Glastonbury Festival.
           </p>
 

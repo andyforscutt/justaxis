@@ -27,7 +27,7 @@
             <h2>Data Owner</h2>
             <p>
               JusTaxis is operated by <strong>Justin Miller</strong> and
-              <strong>Dawn Miller</strong> as 'JusTaxis Ltd'.
+              <strong>Dawn Miller</strong> as 'JusTaxis'.
             </p>
 
             <p>
@@ -60,8 +60,9 @@
 
             <h2>Data Retention</h2>
             <p>
-              We will delete any contact information from one year after your
-              latest enquiry or correspondence in compliance with GDPR.
+              We will delete any contact information from at most one year after
+              your latest enquiry or correspondence in compliance with GDPR, but
+              we aim to delete information 21 days after contact.
             </p>
           </div>
 
