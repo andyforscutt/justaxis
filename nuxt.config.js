@@ -56,6 +56,8 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     "@nuxtjs/eslint-module",
+    // Doc: https://github.com/juliomrqz/nuxt-optimized-images
+    "@aceforth/nuxt-optimized-images",
   ],
   /*
    ** Nuxt.js modules
@@ -76,6 +78,9 @@ export default {
   sitemap: {
     hostname: "https://justaxis.biz",
     gzip: true,
+  },
+  optimizedImages: {
+    optimizeImages: true,
   },
   /*
    ** Build configuration
