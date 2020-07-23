@@ -24,10 +24,6 @@ export default {
   padding: 30px 0 30px 20px;
   margin-top: 20px;
 
-  @media #{$bp-md-up} {
-    margin-top: 30px;
-  }
-
   li {
     clear: left;
     font-size: 16px;
