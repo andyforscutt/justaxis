@@ -7,6 +7,8 @@
         class="hero-img"
         src="~assets/justaxis-glastonbury-taxi-service-2.jpg"
         alt="JusTaxis Taxi company based in Glastonbury, Somerset"
+        width="1340"
+        height="474"
       />
 
       <div class="row">
@@ -42,6 +44,8 @@
           <img
             src="~assets/justaxis-glastonbury-town-hall-pickup.jpg"
             alt="JusTaxis picking up at Glastonbury Town Hall in Somerset"
+            width="700"
+            height="700"
           />
         </div>
         <!--end col-->
@@ -86,6 +90,8 @@
           <img
             src="~assets/justaxis-glastonbury-taxi-service-somerset.jpg"
             alt="Taxi Company for Glastonbury, Street, Wells and whole of Somerset"
+            width="720"
+            height="361"
           />
         </div>
       </div>

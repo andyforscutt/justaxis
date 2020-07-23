@@ -40,6 +40,8 @@
               class="polaroid"
               src="~assets/about/taxis-street-glastonbury-somerset.jpg"
               alt="JusTaxis Taxi Service covering Glastonbury, Street, Wells and the whole of Somerset"
+              width="720"
+              height="582"
             />
           </div>
           <!--end col-->
@@ -77,6 +79,8 @@
               class="polaroid"
               src="~assets/about/justaxis-glastonbury-somerset.jpg"
               alt="Justin and Dawn Miller from JusTaxis Glastonbury, Somerset"
+              width="720"
+              height="387"
             />
           </div>
           <!--end col-->

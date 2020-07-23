@@ -68,6 +68,11 @@ footer {
 article,
 section {
   margin-bottom: 40px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .content {
