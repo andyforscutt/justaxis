@@ -53,6 +53,7 @@
             href="https://www.facebook.com/justaxis.biz/"
             target="_blank"
             title="JusTaxis on Facebook"
+            rel="noopener noreferrer"
           >
             <span class="sr-only">JusTaxis on Facebook</span>
             <svg
@@ -156,8 +157,11 @@ svg.icon-phone {
 }
 
 .social-icons {
-  border-top: 2px solid $lightgrey;
   margin-top: 6px;
+
+  @media #{$bp-sm-up} {
+    border-top: 2px solid $lightgrey;
+  }
 }
 
 .social-icons a {

@@ -21,7 +21,7 @@ export default {
   background-color: $clouds;
   border-top: 6px solid $lightgrey;
   font-weight: 600;
-  padding: 30px 0 20px 20px;
+  padding: 30px 0 30px 20px;
   margin-top: 20px;
 
   @media #{$bp-md-up} {
@@ -38,6 +38,10 @@ export default {
       font-size: 1rem;
       padding-left: 20px;
     }
+  }
+
+  li:last-child {
+    margin-bottom: 0;
   }
 }
 

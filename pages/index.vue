@@ -10,7 +10,7 @@
       />
 
       <div class="row">
-        <div class="col-md-6 col-lg-8">
+        <div class="col-md-8">
           <p>
             We are an established Taxi Company based in
             <strong>Glastonbury</strong>, covering the whole of the
@@ -25,7 +25,7 @@
             the Glastonbury Festival.
           </p>
 
-          <p>
+          <p class="last">
             You can read more about JusTaxis and places of interest around
             Somerset at our
             <nuxt-link to="/about-justaxis-glastonbury-somerset"
@@ -38,7 +38,7 @@
         </div>
         <!--end col-->
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4">
           <img
             src="~assets/justaxis-glastonbury-town-hall-pickup.jpg"
             alt="JusTaxis picking up at Glastonbury Town Hall in Somerset"
@@ -66,14 +66,14 @@
     <section class="home-contact content">
       <h2>Contact Us</h2>
       <div class="row">
-        <div class="col-md-6 col-lg-8">
+        <div class="col-md-8">
           <p>
             Call us on
             <a href="tel:+441458860020" class="call-taxi">01458&nbsp;860020</a>
             to book a Taxi or discuss how we can help with your journey.
           </p>
 
-          <p>
+          <p class="last">
             You can also contact us via our
             <strong
               ><nuxt-link to="/contact-us">contact form</nuxt-link></strong
@@ -82,7 +82,7 @@
           </p>
         </div>
 
-        <div class="col-md-6 col-lg-4">
+        <div class="col-md-4">
           <img
             src="~assets/justaxis-glastonbury-taxi-service-somerset.jpg"
             alt="Taxi Company for Glastonbury, Street, Wells and whole of Somerset"
