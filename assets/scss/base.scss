@@ -146,4 +146,9 @@ span.sr-only {
   .col-lg-8 {
     width: 66%;
   }
+
+  article img,
+  section img {
+    width: auto;
+  }
 }
