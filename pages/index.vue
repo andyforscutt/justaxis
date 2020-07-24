@@ -5,10 +5,14 @@
 
       <img
         class="hero-img"
+        sizes="(max-width: 480px) 100vw, (max-width: 600px) 100vw, (max-width: 790px) 100vw, 1340px"
+        srcset="
+          ~assets/justaxis-glastonbury-taxi-service-2-480w.jpg   480w,
+          ~assets/justaxis-glastonbury-taxi-service-2-600w.jpg   600w,
+          ~assets/justaxis-glastonbury-taxi-service-2-790w.jpg   790w,
+          ~assets/justaxis-glastonbury-taxi-service-2-1340w.jpg 1340w
+        "
         src="~assets/justaxis-glastonbury-taxi-service-2.jpg"
-        alt="JusTaxis Taxi company based in Glastonbury, Somerset"
-        width="1340"
-        height="474"
       />
 
       <div class="row">
