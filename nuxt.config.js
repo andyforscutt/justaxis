@@ -36,7 +36,9 @@ export default {
       {
         rel: "preload",
         as: "font",
-        href: "/_nuxt/fonts/Poppins-Regular.ttf",
+        type: "font/ttf",
+        href: "/fonts/Poppins-Regular.ttf",
+        crossorigin: "true",
       },
     ],
   },
