@@ -1,21 +1,7 @@
-// @font-face {
-//   font-family: $font-name;
-//   src: url($font-path + $font-file);
-// }
-
 @font-face {
-  font-family: Poppins-Regular;
-  src: url("~assets/fonts/Poppins-Regular.ttf");
-}
-
-@font-face {
-  font-family: Poppins-Medium;
-  src: url("~assets/fonts/Poppins-Medium.ttf");
-}
-
-@font-face {
-  font-family: Poppins-Bold;
-  src: url("~assets/fonts/Poppins-Bold.ttf");
+  font-family: $font-name;
+  src: url($font-path + $font-file);
+  font-display: fallback;
 }
 
 [v-cloak],
@@ -27,7 +13,7 @@ body,
 html {
   height: 100%;
   color: $black;
-  font-family: Poppins-Regular, sans-serif;
+  font-family: $font-name, sans-serif;
   line-height: 1.75;
   font-size: 17px;
   font-weight: 400;

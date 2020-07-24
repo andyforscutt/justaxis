@@ -126,25 +126,10 @@ export default {
 @import "~assets/scss/variables";
 
 .hero-img {
-  width: 100%;
-  height: auto;
-
   @media #{$bp-md-up} {
     margin-bottom: 30px;
   }
 }
-
-// .hero-img {
-//   background-image: url("~assets/justaxis-glastonbury-taxi-service-2.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   width: 100%;
-//   height: 40vh;
-
-//   @media #{$bp-md-up} {
-//     margin-bottom: 30px;
-//   }
-// }
 
 #intro {
   margin-bottom: 20px;

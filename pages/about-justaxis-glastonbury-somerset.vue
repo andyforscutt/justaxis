@@ -27,10 +27,10 @@
             </p>
 
             <p>
-              Justaxis was arguably the first to adopt and use its own branding,
-              defiantly the first to run a hybrid car, the first to accept
-              payments with card machines and the first and only company to run
-              a union jack and chequered flag on the bonnet.
+              Justaxis was arguably the first in the area to adopt and use its
+              own branding, definitely the first to run a hybrid car, the first
+              to accept payments with card machines and the first and only
+              company to run a Union Jack and chequered flag on the bonnet.
             </p>
           </div>
           <!--end col-->
@@ -69,7 +69,7 @@
               We are a typical Somerset born and bred small family business and
               we grew up in the valley between the Quantock and Mendip hills in
               an area called the Somerset levels. We are never really that far
-              from the Tor&#39;s sight
+              from the Tor&#39;s sight.
             </p>
           </div>
           <!--end col-->
