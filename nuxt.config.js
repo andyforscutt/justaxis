@@ -93,7 +93,7 @@ export default {
     imagesName: ({ isDev }) =>
       isDev
         ? "[path][name][hash:optimized].[ext]"
-        : "img/[name][contenthash:7].[ext]",
+        : "img/[name].[contenthash:7].[ext]",
   },
   /*
    ** Build configuration
