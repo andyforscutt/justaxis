@@ -1,7 +1,6 @@
 @font-face {
   font-family: $font-name;
   src: url($font-path + $font-file);
-  font-display: fallback;
 }
 
 [v-cloak],

@@ -90,6 +90,10 @@ export default {
   },
   optimizedImages: {
     optimizeImages: true,
+    imagesName: ({ isDev }) =>
+      isDev
+        ? "[path][name][hash:optimized].[ext]"
+        : "img/[name][contenthash:7].[ext]",
   },
   /*
    ** Build configuration
