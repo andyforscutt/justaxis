@@ -1,6 +1,18 @@
+// @font-face {
+//   font-family: $font-name;
+//   src: url($font-path + $font-file + ".ttf");
+//   font-style: normal;
+//   font-weight: 400;
+// }
+
 @font-face {
   font-family: $font-name;
-  src: url($font-path + $font-file);
+  font-style: normal;
+  font-weight: 400;
+  src: local("Poppins Regular"), local($font-file),
+    url($font-path + $font-file + ".woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url($font-path + $font-file + ".woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 [v-cloak],
@@ -15,7 +27,6 @@ html {
   font-family: $font-name, sans-serif;
   line-height: 1.75;
   font-size: 17px;
-  font-weight: 400;
 
   @media #{$bp-lg-up} {
     font-size: 18px;

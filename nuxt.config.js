@@ -36,8 +36,8 @@ export default {
       {
         rel: "preload",
         as: "font",
-        type: "font/ttf",
-        href: "/fonts/Poppins-Regular.ttf",
+        type: "font/woff2",
+        href: "/fonts/Poppins-Regular.woff2",
         crossorigin: "true",
       },
     ],
