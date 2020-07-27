@@ -4,6 +4,7 @@
     {{ HEAD }}
   </head>
   <body {{ BODY_ATTRS }}>
+    {{ APP }}
     <form
       name="justaxis-contact-form"
       data-netlify="true"
@@ -17,16 +18,12 @@
       <input type="email" name="email" />
       <input type="text" name="phone" />
       <input type="date" name="date" />
-
       <input type="time" name="pickup-time" />
       <textarea name="pickup-address"></textarea>
       <input type="text" name="pickup-postcode" />
-
       <textarea name="dropoff-address"></textarea>
       <input type="text" name="dropoff-postcode" />
-
       <textarea name="notes"></textarea>
     </form>
-    {{ APP }}
   </body>
 </html>
