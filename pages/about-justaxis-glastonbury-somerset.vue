@@ -37,11 +37,18 @@
 
           <div class="col-md-6 col-lg-4">
             <img
+              width="700"
+              height="566"
               class="polaroid"
-              src="~assets/about/taxis-street-glastonbury-somerset.jpg"
+              src="/about/taxis-street-glastonbury-somerset-700w.jpg"
               alt="JusTaxis Taxi Service covering Glastonbury, Street, Wells and the whole of Somerset"
-              width="720"
-              height="582"
+              srcset="
+                /about/taxis-street-glastonbury-somerset-375w.jpg 375w,
+                /about/taxis-street-glastonbury-somerset-500w.jpg 500w,
+                /about/taxis-street-glastonbury-somerset-600w.jpg 600w,
+                /about/taxis-street-glastonbury-somerset-700w.jpg 700w
+              "
+              sizes="(max-width: 700px) 100vw, 700px"
             />
           </div>
           <!--end col-->
@@ -76,11 +83,18 @@
 
           <div class="col-md-6 col-lg-4">
             <img
+              width="700"
+              height="376"
               class="polaroid"
-              src="~assets/about/justaxis-glastonbury-somerset.jpg"
+              src="/about/justaxis-glastonbury-somerset-700w.jpg"
               alt="Justin and Dawn Miller from JusTaxis Glastonbury, Somerset"
-              width="720"
-              height="387"
+              srcset="
+                /about/justaxis-glastonbury-somerset-375w.jpg 375w,
+                /about/justaxis-glastonbury-somerset-500w.jpg 500w,
+                /about/justaxis-glastonbury-somerset-600w.jpg 600w,
+                /about/justaxis-glastonbury-somerset-700w.jpg 700w
+              "
+              sizes="(max-width: 700px) 100vw, 700px"
             />
           </div>
           <!--end col-->

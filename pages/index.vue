@@ -4,15 +4,19 @@
       <h1>JusTaxis - Glastonbury Taxi Company</h1>
 
       <img
-        class="hero-img"
+        width="1340"
+        height="474"
         src="/justaxis-glastonbury-taxi-service-2-1340w.jpg"
-        sizes="(max-width: 480px) 100vw, (max-width: 600px) 100vw, (max-width: 790px) 100vw, 1340px"
+        class="hero-img"
+        alt="JusTaxis Taxi Company Glastonbury, Somerset"
         srcset="
           /justaxis-glastonbury-taxi-service-2-480w.jpg   480w,
           /justaxis-glastonbury-taxi-service-2-600w.jpg   600w,
           /justaxis-glastonbury-taxi-service-2-790w.jpg   790w,
+          /justaxis-glastonbury-taxi-service-2-1024w.jpg 1024w,
           /justaxis-glastonbury-taxi-service-2-1340w.jpg 1340w
         "
+        sizes="(max-width: 1340px) 100vw, 1340px"
       />
 
       <div class="row">
@@ -46,10 +50,17 @@
 
         <div class="col-md-4">
           <img
-            src="~assets/justaxis-glastonbury-town-hall-pickup.jpg"
-            alt="JusTaxis picking up at Glastonbury Town Hall in Somerset"
             width="700"
             height="700"
+            src="/justaxis-glastonbury-town-hall-pickup-700w.jpg"
+            alt="JusTaxis Taxi picking up at Glastonbury Town Hall in Somerset"
+            srcset="
+              /justaxis-glastonbury-town-hall-pickup-375w.jpg 375w,
+              /justaxis-glastonbury-town-hall-pickup-500w.jpg 500w,
+              /justaxis-glastonbury-town-hall-pickup-600w.jpg 600w,
+              /justaxis-glastonbury-town-hall-pickup-700w.jpg 700w
+            "
+            sizes="(max-width: 700px) 100vw, 700px"
           />
         </div>
         <!--end col-->
@@ -92,10 +103,17 @@
 
         <div class="col-md-4">
           <img
-            src="~assets/justaxis-glastonbury-taxi-service-somerset.jpg"
+            width="700"
+            height="351"
+            src="/justaxis-glastonbury-taxi-service-somerset-700w.jpg"
             alt="Taxi Company for Glastonbury, Street, Wells and whole of Somerset"
-            width="720"
-            height="361"
+            srcset="
+              /justaxis-glastonbury-taxi-service-somerset-375w.jpg 375w,
+              /justaxis-glastonbury-taxi-service-somerset-500w.jpg 500w,
+              /justaxis-glastonbury-taxi-service-somerset-600w.jpg 600w,
+              /justaxis-glastonbury-taxi-service-somerset-700w.jpg 700w
+            "
+            sizes="(max-width: 700px) 100vw, 700px"
           />
         </div>
       </div>
