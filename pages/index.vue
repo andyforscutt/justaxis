@@ -106,6 +106,7 @@
             width="700"
             height="351"
             src="/justaxis-glastonbury-taxi-service-somerset-700w.jpg"
+            loading="lazy"
             alt="Taxi Company for Glastonbury, Street, Wells and whole of Somerset"
             srcset="
               /justaxis-glastonbury-taxi-service-somerset-375w.jpg 375w,

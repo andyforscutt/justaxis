@@ -88,6 +88,7 @@
               class="polaroid"
               src="/about/justaxis-glastonbury-somerset-700w.jpg"
               alt="Justin and Dawn Miller from JusTaxis Glastonbury, Somerset"
+              loading="lazy"
               srcset="
                 /about/justaxis-glastonbury-somerset-375w.jpg 375w,
                 /about/justaxis-glastonbury-somerset-500w.jpg 500w,

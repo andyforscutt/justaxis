@@ -13,14 +13,15 @@
     <img
       width="1340"
       height="323"
-      src="/safe-taxi-travel-glastonbury-somerset-1340w.png "
+      src="/safety/safe-taxi-travel-glastonbury-somerset-1340w.png"
+      loading="lazy"
       alt="Safe Taxi Travel Logos and Graphics"
       srcset="
-        /safe-taxi-travel-glastonbury-somerset-480w.png   480w,
-        /safe-taxi-travel-glastonbury-somerset-600w.png   600w,
-        /safe-taxi-travel-glastonbury-somerset-790w.png   790w,
-        /safe-taxi-travel-glastonbury-somerset-1024w.png 1024w,
-        /safe-taxi-travel-glastonbury-somerset-1340w.png 1340w
+        /safety/safe-taxi-travel-glastonbury-somerset-480w.png   480w,
+        /safety/safe-taxi-travel-glastonbury-somerset-600w.png   600w,
+        /safety/safe-taxi-travel-glastonbury-somerset-790w.png   790w,
+        /safety/safe-taxi-travel-glastonbury-somerset-1024w.png 1024w,
+        /safety/safe-taxi-travel-glastonbury-somerset-1340w.png 1340w
       "
       sizes="(max-width: 1340px) 100vw, 1340px"
     />
