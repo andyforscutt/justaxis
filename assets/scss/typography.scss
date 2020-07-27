@@ -19,7 +19,7 @@ h1 {
 h2 {
   color: $white;
   padding: 6px 12px;
-  background-color: firebrick;
+  background-color: $firebrick;
   font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -34,9 +34,13 @@ h3 {
   text-transform: uppercase;
 }
 
+strong {
+  font-weight: 700;
+}
+
 ul.list {
   list-style: square;
-  color: firebrick;
+  color: $firebrick;
   padding-left: 20px;
   margin-bottom: 20px;
 }
