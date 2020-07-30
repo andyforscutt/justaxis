@@ -21,7 +21,6 @@
       netlify-honeypot="bot-field"
       @submit="checkForm"
     >
-      <a id="formtop" href="#"></a>
       <p class="hidden">
         <label
           >Do not fill this out if you're human: <input name="bot-field"
@@ -98,7 +97,13 @@
         <h3>Date and Time</h3>
         <p>
           <label for="date">Date of Journey:</label>
-          <input id="date" v-model="date" type="date" name="date" />
+          <input
+            id="date"
+            v-model="date"
+            type="date"
+            name="date"
+            @blur="validateDate"
+          />
         </p>
 
         <p>
@@ -247,10 +252,25 @@ export default {
         return false;
       }
     },
+    validateDate: function () {
+      if (this.date !== null) {
+        console.log(toString(this.date).length);
+        if (toString(this.date).length >= 10) {
+          this.errors.pop("You must enter a valid date.");
+          return true;
+        }
+      }
+
+      if (this.errors.indexOf("You must enter a valid date.") === -1) {
+        this.errors.push("You must enter a valid date.");
+        return false;
+      }
+    },
     checkForm: function (e) {
       this.errors = [];
 
       this.validateEmail();
+      this.validateDate();
 
       //Validation - Personal Details
       if (!this.name) {

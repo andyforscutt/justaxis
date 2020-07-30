@@ -23,8 +23,19 @@ export default {
       titleTemplate: "%s | JusTaxis Glastonbury",
       meta: [
         {
+          hid: "og:title",
+          name: "og:title",
+          content: "JusTaxis Taxi Service Glastonbury",
+        },
+        {
           hid: "description",
           name: "description",
+          content:
+            "JusTaxis - Taxi service for Glastonbury, Street, Wells and the whole of Somerset. Phone 01458 860020. Local Taxis and Airport Transfers to Bristol Airport.",
+        },
+        {
+          hid: "og:description",
+          name: "og:description",
           content:
             "JusTaxis - Taxi service for Glastonbury, Street, Wells and the whole of Somerset. Phone 01458 860020. Local Taxis and Airport Transfers to Bristol Airport.",
         },
@@ -41,12 +52,23 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content: "/justaxis-glastonbury-town-hall-pickup-700w.jpg",
+          content:
+            "https://justaxis.biz/justaxis-glastonbury-town-hall-pickup-700w.jpg",
         },
         {
           hid: "og:site_name",
           name: "og:site_name",
           content: "JusTaxis Taxi Company Glastonbury Somerset",
+        },
+        {
+          hid: "article:publisher",
+          name: "article:publisher",
+          content: "https://www.facebook.com/justaxis.biz",
+        },
+        {
+          hid: "article:author",
+          name: "article:author",
+          content: "https://www.facebook.com/justaxis.biz",
         },
       ],
     };

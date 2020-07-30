@@ -140,6 +140,10 @@ export default {
     return {
       title: "JusTaxis - Taxi Company Glastonbury Somerset",
       titleTemplate: null,
+      meta: [
+        { property: "og:title", content: this.title },
+        { property: "og:url", content: "https://justaxis.biz" },
+      ],
     };
   },
 };
@@ -147,7 +151,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "~assets/scss/variables";
-
 .hero-img {
   @media #{$bp-md-up} {
     margin-bottom: 30px;

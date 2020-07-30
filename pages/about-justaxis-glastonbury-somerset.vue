@@ -194,6 +194,12 @@ export default {
             "About JusTaxis - Taxi company from Glastonbury, Somerset. Call 01458 860020. Taxis across Somerset including Bristol airport transfers.",
         },
         {
+          hid: "og:description",
+          name: "og:description",
+          content:
+            "About JusTaxis - Taxi company from Glastonbury, Somerset. Call 01458 860020. Taxis across Somerset including Bristol airport transfers.",
+        },
+        {
           hid: "og:title",
           name: "og:title",
           content: "About JusTaxis - Taxi Company Glastonbury Somerset",
@@ -201,7 +207,12 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content: "/about/taxis-street-glastonbury-somerset-700w.jpg",
+          content:
+            "https://justaxis.biz/about/taxis-street-glastonbury-somerset-700w.jpg",
+        },
+        {
+          property: "og:url",
+          content: "https://justaxis.biz/about-justaxis-glastonbury-somerset",
         },
       ],
     };
