@@ -61,6 +61,11 @@ export default {
           content: "JusTaxis Taxi Company Glastonbury Somerset",
         },
         {
+          hid: "fb:app_id",
+          name: "fb:app_id",
+          content: "579694722720207",
+        },
+        {
           hid: "article:publisher",
           name: "article:publisher",
           content: "https://www.facebook.com/justaxis.biz",

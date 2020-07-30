@@ -38,7 +38,7 @@ export default {
         as: "font",
         type: "font/woff2",
         href: "/fonts/Poppins-Regular.woff2",
-        crossorigin: "true",
+        crossorigin: "anonymous",
       },
     ],
   },
