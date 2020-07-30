@@ -26,7 +26,7 @@ export default {
           hid: "description",
           name: "description",
           content:
-            "JusTaxis - Taxi service for Glastonbury, Street, Wells and the whole of Somerset. 01458 860020",
+            "JusTaxis - Taxi service for Glastonbury, Street, Wells and the whole of Somerset. Phone 01458 860020. Local Taxis and Airport Transfers to Bristol Airport.",
         },
         {
           hid: "og:locale",
@@ -41,8 +41,7 @@ export default {
         {
           hid: "og:image",
           name: "og:image",
-          content:
-            "/_nuxt/img/justaxis-logo-glastonbury-taxi-company-160x75.png",
+          content: "/justaxis-glastonbury-town-hall-pickup-700w.jpg",
         },
         {
           hid: "og:site_name",

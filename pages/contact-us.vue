@@ -29,7 +29,7 @@ export default {
           hid: "og:title",
           name: "og:title",
           content:
-            "Contact JusTaxis, Taxi Company Glastonbury Somerset 01458 860020",
+            "Contact JusTaxis, Taxi Company Glastonbury, Street, Wells Somerset, 01458 860020",
         },
       ],
     };
@@ -37,6 +37,4 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-//@import "~assets/scss/variables";
-</style>
+<style lang="scss"></style>
