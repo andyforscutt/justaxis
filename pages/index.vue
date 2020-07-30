@@ -141,7 +141,10 @@ export default {
       title: "JusTaxis - Taxi Company Glastonbury Somerset",
       titleTemplate: null,
       meta: [
-        { property: "og:title", content: this.title },
+        {
+          property: "og:title",
+          content: "JusTaxis - Taxi Company Glastonbury Somerset",
+        },
         { property: "og:url", content: "https://justaxis.biz" },
       ],
     };
