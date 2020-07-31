@@ -13,7 +13,12 @@
         </nuxt-link>
       </div>
 
-      <button class="drawer-toggle" :class="menuClass" @click.prevent="toggle">
+      <button
+        aria-label="Toggle navigation menu"
+        class="drawer-toggle"
+        :class="menuClass"
+        @click.prevent="toggle"
+      >
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>

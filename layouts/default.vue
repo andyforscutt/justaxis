@@ -24,8 +24,13 @@ export default {
       meta: [
         {
           hid: "og:title",
-          name: "og:title",
-          content: "JusTaxis Taxi Service Glastonbury",
+          property: "og:title",
+          content: "JusTaxis Taxi Service Glastonbury, Somerset",
+        },
+        {
+          hid: "twitter:title",
+          name: "twitter:title",
+          content: "JusTaxis Taxi Service Glastonbury, Somerset",
         },
         {
           hid: "description",
@@ -35,45 +40,27 @@ export default {
         },
         {
           hid: "og:description",
-          name: "og:description",
+          property: "og:description",
           content:
             "JusTaxis - Taxi service for Glastonbury, Street, Wells and the whole of Somerset. Phone 01458 860020. Local Taxis and Airport Transfers to Bristol Airport.",
         },
         {
-          hid: "og:locale",
-          name: "og:locale",
-          content: "en_GB",
-        },
-        {
-          hid: "og:type",
-          name: "og:type",
-          content: "website",
+          hid: "twitter:description",
+          name: "twitter:description",
+          content:
+            "JusTaxis - Taxi service for Glastonbury, Street, Wells and the whole of Somerset. Phone 01458 860020. Local Taxis and Airport Transfers to Bristol Airport.",
         },
         {
           hid: "og:image",
-          name: "og:image",
+          property: "og:image",
           content:
             "https://justaxis.biz/justaxis-glastonbury-town-hall-pickup-700w.jpg",
         },
         {
-          hid: "og:site_name",
-          name: "og:site_name",
-          content: "JusTaxis Taxi Company Glastonbury Somerset",
-        },
-        {
-          hid: "fb:app_id",
-          name: "fb:app_id",
-          content: "579694722720207",
-        },
-        {
-          hid: "article:publisher",
-          name: "article:publisher",
-          content: "https://www.facebook.com/justaxis.biz",
-        },
-        {
-          hid: "article:author",
-          name: "article:author",
-          content: "https://www.facebook.com/justaxis.biz",
+          hid: "twitter:image",
+          name: "twitter:image",
+          content:
+            "https://justaxis.biz/justaxis-glastonbury-town-hall-pickup-700w.jpg",
         },
       ],
     };

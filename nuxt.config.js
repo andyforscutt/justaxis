@@ -26,9 +26,54 @@ export default {
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       {
+        hid: "og:site_name",
+        property: "og:site_name",
+        content: "JusTaxis Taxi Company Glastonbury Somerset",
+      },
+      {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || "",
+      },
+      {
+        hid: "og:locale",
+        property: "og:locale",
+        content: "en_GB",
+      },
+      {
+        hid: "og:type",
+        property: "og:type",
+        content: "website",
+      },
+      {
+        hid: "og:image:alt",
+        property: "og:image:alt",
+        content: "Taxi Cab in Glastonbury, Somerset",
+      },
+      {
+        hid: "twitter:image:alt",
+        name: "twitter:image:alt",
+        content: "Taxi Cab in Glastonbury, Somerset",
+      },
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+      {
+        hid: "fb:app_id",
+        property: "fb:app_id",
+        content: "579694722720207",
+      },
+      {
+        hid: "article:publisher",
+        name: "article:publisher",
+        content: "https://www.facebook.com/justaxis.biz",
+      },
+      {
+        hid: "article:author",
+        name: "article:author",
+        content: "https://www.facebook.com/justaxis.biz",
       },
     ],
     link: [
@@ -82,6 +127,7 @@ export default {
   robots: {
     UserAgent: "*",
     Allow: "/",
+    Disallow: "/contact-us-success",
     Sitemap: "https://justaxis.biz/sitemap.xml",
   },
   sitemap: {
