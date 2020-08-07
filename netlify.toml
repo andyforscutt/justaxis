@@ -10,3 +10,27 @@
 	cache-control = '''
 	max-age=365000000,
 	immutable'''
+
+  [[redirects]]
+  from = "/page2.html"
+  to = "/"
+  status = 301
+  force = false
+
+  [[redirects]]
+  from = "/page3.html"
+  to = "/"
+  status = 301
+  force = false
+
+  [[redirects]]
+  from = "/page4.html"
+  to = "/about-justaxis-glastonbury-somerset"
+  status = 301
+  force = false
+
+   [[redirects]]
+  from = "/page5.html"
+  to = "/contact-us"
+  status = 301
+  force = false
