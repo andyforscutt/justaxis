@@ -1,6 +1,6 @@
 <template>
   <section class="content safe-travel">
-    <h2>Safe Travel</h2>
+    <h2>Safe Taxi Travel</h2>
     <div class="row">
       <div class="col-lg-8">
         <p>

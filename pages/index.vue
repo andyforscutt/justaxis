@@ -83,7 +83,7 @@
     <SafeTravel />
 
     <section class="home-contact content">
-      <h2>Contact Us</h2>
+      <h2>Arrange a Taxi</h2>
       <div class="row">
         <div class="col-md-8">
           <p>
@@ -95,7 +95,7 @@
           <p class="last">
             You can also contact us via our
             <strong
-              ><nuxt-link to="/contact-us">contact form</nuxt-link></strong
+              ><nuxt-link to="/contact-us">taxi contact form</nuxt-link></strong
             >
             for Enquiries or Direct Taxi Bookings.
           </p>
