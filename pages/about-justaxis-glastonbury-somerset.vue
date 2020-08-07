@@ -233,9 +233,13 @@ export default {
           content: "https://justaxis.biz/about-justaxis-glastonbury-somerset",
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://justaxis.biz/about-justaxis-glastonbury-somerset",
+        },
+      ],
     };
   },
 };
 </script>
-
-<style></style>

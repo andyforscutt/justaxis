@@ -147,6 +147,7 @@ export default {
           content: "https://justaxis.biz",
         },
       ],
+      link: [{ rel: "canonical", href: "https://justaxis.biz" }],
     };
   },
 };

@@ -83,12 +83,17 @@ export default {
         {
           hid: "description",
           name: "description",
-          content: "JusTaxis Privacy Notice",
+          content:
+            "Privacy Notice for Justaxis, Taxi Company in Glastonbury, Somerset",
+        },
+      ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://justaxis.biz/privacy-notice",
         },
       ],
     };
   },
 };
 </script>
-
-<style></style>

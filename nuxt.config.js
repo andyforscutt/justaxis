@@ -117,8 +117,6 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
-    //'bootstrap-vue/nuxt',
     //Doc: https://github.com/nuxt-community/robots-module
     "@nuxtjs/robots",
     // Doc: https://www.npmjs.com/package/@nuxtjs/sitemap
@@ -133,6 +131,7 @@ export default {
   sitemap: {
     hostname: "https://justaxis.biz",
     gzip: true,
+    exclude: ["/contact-us-success"],
   },
   optimizedImages: {
     optimizeImages: true,

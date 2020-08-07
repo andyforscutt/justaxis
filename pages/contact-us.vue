@@ -55,9 +55,13 @@ export default {
           content: "https://justaxis.biz/contact-us",
         },
       ],
+      link: [
+        {
+          rel: "canonical",
+          href: "https://justaxis.biz/contact-us",
+        },
+      ],
     };
   },
 };
 </script>
-
-<style lang="scss"></style>
