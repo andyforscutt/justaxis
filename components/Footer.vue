@@ -104,13 +104,10 @@ footer {
 
   a {
     color: $clouds;
-    //transition: color 0.3s, border-bottom 0.3s;
 
     &:hover,
     &:focus {
       color: $white;
-      padding-bottom: 1px;
-      border-bottom: 1px solid $white;
     }
   }
 }
@@ -169,11 +166,6 @@ svg.icon-phone {
   margin-top: 15px;
   border: $navy !important;
   transition: none !important;
-
-  &:hover {
-    display: block;
-    border: $navy !important;
-  }
 
   &:focus {
     outline: 2px solid $black;
