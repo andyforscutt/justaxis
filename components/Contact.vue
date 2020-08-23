@@ -9,9 +9,7 @@
           <strong>Direct Booking</strong>.
         </p>
       </div>
-      <!--end col-->
     </div>
-    <!--end row-->
 
     <form
       name="justaxis-contact-form"

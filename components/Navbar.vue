@@ -99,16 +99,15 @@ nav {
   flex-grow: 2;
   height: 75px;
   align-self: flex-start;
+  width: 160px;
+  height: 75px;
 
   a,
   a:hover,
   a:focus,
   a:active {
     border: none;
-  }
-
-  img {
-    min-width: 160px;
+    width: 100%;
   }
 }
 

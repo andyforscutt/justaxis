@@ -33,27 +33,11 @@
               company to run a Union Jack and chequered flag on the bonnet.
             </p>
           </div>
-          <!--end col-->
 
           <div class="col-md-6 col-lg-4">
-            <img
-              width="700"
-              height="566"
-              class="polaroid"
-              src="/about/taxis-street-glastonbury-somerset-700w.jpg"
-              alt="JusTaxis Taxi Service covering Glastonbury, Street, Wells and the whole of Somerset"
-              srcset="
-                /about/taxis-street-glastonbury-somerset-375w.jpg 375w,
-                /about/taxis-street-glastonbury-somerset-500w.jpg 500w,
-                /about/taxis-street-glastonbury-somerset-600w.jpg 600w,
-                /about/taxis-street-glastonbury-somerset-700w.jpg 700w
-              "
-              sizes="(max-width: 700px) 100vw, 700px"
-            />
+            <AboutImg1 />
           </div>
-          <!--end col-->
         </div>
-        <!--end row-->
       </section>
 
       <section class="spikes">
@@ -79,24 +63,9 @@
               from the Tor&#39;s sight.
             </p>
           </div>
-          <!--end col-->
 
           <div class="col-md-6 col-lg-4">
-            <img
-              width="700"
-              height="376"
-              class="polaroid"
-              src="/about/justaxis-glastonbury-somerset-700w.jpg"
-              alt="Justin and Dawn Miller from JusTaxis Glastonbury, Somerset"
-              loading="lazy"
-              srcset="
-                /about/justaxis-glastonbury-somerset-375w.jpg 375w,
-                /about/justaxis-glastonbury-somerset-500w.jpg 500w,
-                /about/justaxis-glastonbury-somerset-600w.jpg 600w,
-                /about/justaxis-glastonbury-somerset-700w.jpg 700w
-              "
-              sizes="(max-width: 700px) 100vw, 700px"
-            />
+            <AboutImg2 />
           </div>
           <!--end col-->
         </div>
@@ -114,9 +83,7 @@
               Arthur.
             </p>
           </div>
-          <!--end col-->
         </div>
-        <!--end row-->
 
         <div class="row">
           <div class="col-md-6">
@@ -157,9 +124,7 @@
               <li>BRI Bristol</li>
             </ul>
           </div>
-          <!--end col-->
         </div>
-        <!--end row-->
 
         <div class="row">
           <div class="col-lg-8">
@@ -172,17 +137,22 @@
               >.
             </p>
           </div>
-          <!--end col-->
         </div>
-        <!--end row-->
       </section>
     </article>
   </main>
 </template>
 
 <script>
+import AboutImg1 from "~/components/about/AboutImg1.vue";
+import AboutImg2 from "~/components/about/AboutImg2.vue";
+
 export default {
   name: "AboutJustaxisGlastonburySomerset",
+  components: {
+    AboutImg1,
+    AboutImg2,
+  },
   head() {
     return {
       title: "About",

@@ -135,10 +135,16 @@ export default {
   },
   optimizedImages: {
     optimizeImages: true,
+    optimizeImagesInDev: true,
+    handleImages: ["jpeg", "png", "svg", "webp", "gif"],
     imagesName: ({ isDev }) =>
       isDev
         ? "[path][name][hash:optimized].[ext]"
-        : "img/[name].[contenthash:7].[ext]",
+        : "[name][hash:optimized].[ext]",
+    responsiveImagesName: ({ isDev }) =>
+      isDev
+        ? "[path][name]-[width]-[hash:optimized].[ext]"
+        : "[name]-[width]-[contenthash:7].[ext]",
   },
   /*
    ** Build configuration

@@ -13,25 +13,22 @@
     <img
       width="1340"
       height="323"
-      src="/safety/safe-taxi-travel-glastonbury-somerset-1340w.png"
+      :srcSet="multipleSizes.srcSet"
+      :src="fallback.src"
       loading="lazy"
       alt="Safe Taxi Travel Logos and Graphics"
-      srcset="
-        /safety/safe-taxi-travel-glastonbury-somerset-480w.png   480w,
-        /safety/safe-taxi-travel-glastonbury-somerset-600w.png   600w,
-        /safety/safe-taxi-travel-glastonbury-somerset-790w.png   790w,
-        /safety/safe-taxi-travel-glastonbury-somerset-1024w.png 1024w,
-        /safety/safe-taxi-travel-glastonbury-somerset-1340w.png 1340w
-      "
-      sizes="(max-width: 1340px) 100vw, 1340px"
     />
   </section>
 </template>
 
 <script>
+const fallback = require("~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=1340");
+const multipleSizes = require("~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=700&sizes[]=1024&sizes[]=1340&format=webp");
+
 export default {
   name: "SafeTravel",
+  data() {
+    return { multipleSizes, fallback };
+  },
 };
 </script>
-
-<style lang="scss" scoped></style>

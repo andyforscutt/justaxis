@@ -13,5 +13,3 @@ export default {
   name: "Airports",
 };
 </script>
-
-<style lang="scss" scoped></style>
