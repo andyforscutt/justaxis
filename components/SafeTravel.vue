@@ -10,25 +10,29 @@
         </p>
       </div>
     </div>
-    <img
-      width="1340"
-      height="323"
-      :srcSet="multipleSizes.srcSet"
-      :src="fallback.src"
-      loading="lazy"
-      alt="Safe Taxi Travel Logos and Graphics"
-    />
+
+    <picture>
+      <source
+        :srcSet="
+          require('~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=700&sizes[]=1024&sizes[]=1340&format=webp')
+        "
+        type="image/webp"
+      />
+      <source
+        :srcSet="
+          require('~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=1340')
+        "
+        type="image/png"
+      />
+      <img
+        :src="
+          require('~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png')
+        "
+        width="1340"
+        height="323"
+        loading="lazy"
+        alt="Safe Taxi Travel Logos and Graphics"
+      />
+    </picture>
   </section>
 </template>
-
-<script>
-const fallback = require("~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=1340");
-const multipleSizes = require("~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=700&sizes[]=1024&sizes[]=1340&format=webp");
-
-export default {
-  name: "SafeTravel",
-  data() {
-    return { multipleSizes, fallback };
-  },
-};
-</script>
