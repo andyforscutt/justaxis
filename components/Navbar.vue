@@ -4,12 +4,7 @@
       <div class="logo">
         <span class="sr-only">JusTaxis Logo</span>
         <nuxt-link to="/">
-          <img
-            src="~assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png"
-            height="75"
-            width="160"
-            alt="JusTaxis Logo"
-          />
+          <Logo />
         </nuxt-link>
       </div>
 
@@ -54,8 +49,13 @@
 </template>
 
 <script>
+import Logo from "~/components/Logo.vue";
+
 export default {
   name: "Navbar",
+  components: {
+    Logo,
+  },
   data: function () {
     return {
       menuClass: "closed",
@@ -107,7 +107,6 @@ nav {
   a:focus,
   a:active {
     border: none;
-    width: 100%;
   }
 }
 

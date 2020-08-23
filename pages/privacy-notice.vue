@@ -65,9 +65,7 @@
               we aim to delete information 21 days after contact.
             </p>
           </div>
-          <!--end col-->
         </div>
-        <!--end row-->
       </section>
     </article>
   </main>

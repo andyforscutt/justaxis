@@ -22,5 +22,3 @@ export default {
   name: "ContactSuccess",
 };
 </script>
-
-<style lang="scss" scoped></style>
