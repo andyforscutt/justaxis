@@ -2,8 +2,7 @@
   <nav class="nav">
     <div class="container flex nav-container">
       <div class="logo">
-        <span class="sr-only">JusTaxis Logo</span>
-        <nuxt-link to="/">
+        <nuxt-link to="/" aria-label="Go to JusTaxis home page">
           <Logo />
         </nuxt-link>
       </div>
