@@ -1,8 +1,24 @@
 <template>
-  <img
-    src="~assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png?format=webp"
-    height="75"
-    width="160"
-    alt="JusTaxis Logo"
-  />
+  <picture>
+    <source
+      :srcSet="
+        require('~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png?webp')
+      "
+      type="image/webp"
+    />
+    <source
+      :srcSet="
+        require('~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png')
+      "
+      type="image/png"
+    />
+    <img
+      :src="
+        require('~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png')
+      "
+      height="75"
+      width="160"
+      alt="JusTaxis Logo"
+    />
+  </picture>
 </template>
