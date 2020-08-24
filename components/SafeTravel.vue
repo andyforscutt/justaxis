@@ -12,12 +12,8 @@
     </div>
 
     <picture>
-      <source
-        :srcSet="multipleSizes.srcSet"
-        :src="multipleSizes.src"
-        type="image/webp"
-      />
-      <source :srcSet="fallback.srcSet" :src="fallback.src" type="image/png" />
+      <source :srcSet="multipleSizes.srcSet" type="image/webp" />
+      <source :srcSet="fallback.srcSet" type="image/png" />
 
       <img
         src="~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png"

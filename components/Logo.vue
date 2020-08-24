@@ -1,11 +1,6 @@
 <template>
   <picture>
-    <source
-      :srcSet="multipleSizes.srcSet"
-      :src="multipleSizes.src"
-      type="image/webp"
-    />
-    <source :srcSet="fallback.srcSet" :src="fallback.src" type="image/png" />
+    <source :srcSet="multipleSizes.srcSet" type="image/webp" />
 
     <img
       src="~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png"
@@ -17,12 +12,11 @@
 </template>
 
 <script>
-const fallback = require("~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png");
-const multipleSizes = require("~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png?webp");
+const multipleSizes = require("~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png?resize&format=webp");
 
 export default {
   data() {
-    return { fallback, multipleSizes };
+    return { multipleSizes };
   },
 };
 </script>

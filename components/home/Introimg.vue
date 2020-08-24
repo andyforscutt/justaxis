@@ -1,11 +1,7 @@
 <template>
   <picture>
-    <source
-      :srcSet="multipleSizes.srcSet"
-      :src="multipleSizes.src"
-      type="image/webp"
-    />
-    <source :srcSet="fallback.srcSet" :src="fallback.src" type="image/jpg" />
+    <source :srcSet="multipleSizes.srcSet" type="image/webp" />
+    <source :srcSet="fallback.srcSet" type="image/jpg" />
 
     <img
       src="~/assets/justaxis-glastonbury-town-hall-pickup-700w.jpg"
