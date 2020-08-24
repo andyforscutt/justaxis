@@ -17,8 +17,8 @@
 </template>
 
 <script>
-const fallback = require("~/assets//about/justaxis-glastonbury-somerset-700w.jpg?resize&sizes[]=500&sizes[]=600&sizes[]=700");
-const multipleSizes = require("~/assets//about/justaxis-glastonbury-somerset-700w.jpg?resize&sizes[]=500&sizes[]=600&sizes[]=700&format=webp");
+const fallback = require("~/assets/justaxis-glastonbury-town-hall-pickup-700w.jpg?resize&sizes[]=500&sizes[]=600&sizes[]=700");
+const multipleSizes = require("~/assets/justaxis-glastonbury-town-hall-pickup-700w.jpg?resize&sizes[]=500&sizes[]=600&sizes[]=700&format=webp");
 
 export default {
   data() {
