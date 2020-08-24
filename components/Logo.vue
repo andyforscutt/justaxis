@@ -1,24 +1,28 @@
 <template>
   <picture>
     <source
-      :srcSet="
-        require('~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png?webp')
-      "
+      :srcSet="multipleSizes.srcSet"
+      :src="multipleSizes.src"
       type="image/webp"
     />
-    <source
-      :srcSet="
-        require('~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png')
-      "
-      type="image/png"
-    />
+    <source :srcSet="fallback.srcSet" :src="fallback.src" type="image/png" />
+
     <img
-      :src="
-        require('~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png')
-      "
+      src="~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png"
       height="75"
       width="160"
       alt="JusTaxis Logo"
     />
   </picture>
 </template>
+
+<script>
+const fallback = require("~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png");
+const multipleSizes = require("~/assets/logo/justaxis-logo-glastonbury-taxi-company-160x75.png?webp");
+
+export default {
+  data() {
+    return { fallback, multipleSizes };
+  },
+};
+</script>

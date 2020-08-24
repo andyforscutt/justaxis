@@ -13,21 +13,14 @@
 
     <picture>
       <source
-        :srcSet="
-          require('~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=700&sizes[]=1024&sizes[]=1340&format=webp')
-        "
+        :srcSet="multipleSizes.srcSet"
+        :src="multipleSizes.src"
         type="image/webp"
       />
-      <source
-        :srcSet="
-          require('~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=1340')
-        "
-        type="image/png"
-      />
+      <source :srcSet="fallback.srcSet" :src="fallback.src" type="image/png" />
+
       <img
-        :src="
-          require('~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png')
-        "
+        src="~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png"
         width="1340"
         height="323"
         loading="lazy"
@@ -36,3 +29,14 @@
     </picture>
   </section>
 </template>
+
+<script>
+const fallback = require("~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=500&sizes[]=600&sizes[]=700&sizes[]=1024&sizes[]=1340");
+const multipleSizes = require("~/assets/safety/safe-taxi-travel-glastonbury-somerset-1340w.png?resize&sizes[]=500&sizes[]=600&sizes[]=700&sizes[]=1024&sizes[]=1340&format=webp");
+
+export default {
+  data() {
+    return { fallback, multipleSizes };
+  },
+};
+</script>

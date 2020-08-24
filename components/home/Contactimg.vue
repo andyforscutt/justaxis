@@ -1,21 +1,14 @@
 <template>
   <picture>
     <source
-      :srcSet="
-        require('~/assets/justaxis-glastonbury-taxi-service-somerset-700w.jpg?resize&sizes[]=375&sizes[]=500&sizes[]=700&format=webp')
-      "
+      :srcSet="multipleSizes.srcSet"
+      :src="multipleSizes.src"
       type="image/webp"
     />
-    <source
-      :srcSet="
-        require('~/assets/justaxis-glastonbury-taxi-service-somerset-700w.jpg?resize&sizes[]=375&sizes[]=500&sizes[]=700')
-      "
-      type="image/jpg"
-    />
+    <source :srcSet="fallback.srcSet" :src="fallback.src" type="image/jpg" />
+
     <img
-      :src="
-        require('~/assets/justaxis-glastonbury-taxi-service-somerset-700w.jpg')
-      "
+      src="~/assets/justaxis-glastonbury-taxi-service-somerset-700w.jpg"
       width="700"
       height="351"
       loading="lazy"
@@ -23,3 +16,14 @@
     />
   </picture>
 </template>
+
+<script>
+const fallback = require("~/assets/justaxis-glastonbury-taxi-service-somerset-700w.jpg?resize&sizes[]=500&sizes[]=600&sizes[]=700");
+const multipleSizes = require("~/assets/justaxis-glastonbury-taxi-service-somerset-700w.jpg?resize&sizes[]=500&sizes[]=600&sizes[]=700&format=webp");
+
+export default {
+  data() {
+    return { fallback, multipleSizes };
+  },
+};
+</script>
