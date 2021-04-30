@@ -9,6 +9,7 @@
       height="474"
       class="hero-img"
       alt="JusTaxis Taxi Company Glastonbury, Somerset"
+      loading="eager"
     />
   </picture>
 </template>

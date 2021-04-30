@@ -17,6 +17,7 @@
       data-netlify="true"
       action="/contact-us-success"
       netlify-honeypot="bot-field"
+      @submit="checkForm"
     >
       <p class="hidden">
         <label

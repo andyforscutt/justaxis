@@ -8,6 +8,7 @@
       width="700"
       height="700"
       alt="JusTaxis Taxi picking up at Glastonbury Town Hall in Somerset"
+      loading="eager"
     />
   </picture>
 </template>

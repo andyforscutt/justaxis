@@ -3,7 +3,6 @@ export default {
    ** Nuxt rendering mode
    ** See https://nuxtjs.org/api/configuration-mode
    */
-  mode: "universal",
   server: {
     port: "3000",
     host: "0.0.0.0",

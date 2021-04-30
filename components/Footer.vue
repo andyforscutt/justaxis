@@ -3,12 +3,13 @@
     <div class="container footer-content">
       <div class="schema_block schema_organization">
         <div typeof="schema:LocalBusiness">
-          <!--when live href="https://justaxis.biz/" -->
-          <a class="schema_url" property="schema:url" href="#">
-            <div class="schema_name" property="schema:name">
-              JusTaxis
-            </div></a
+          <a
+            class="schema_url"
+            property="schema:url"
+            href="https://justaxis.biz/"
           >
+            <div class="schema_name" property="schema:name">JusTaxis</div>
+          </a>
           <div class="schema_description" property="schema:description">
             Taxi Service in Glastonbury, Somerset
           </div>
