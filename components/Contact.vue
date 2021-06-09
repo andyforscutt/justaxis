@@ -5,8 +5,7 @@
         <p>
           Need a Taxi in <strong>Glastonbury</strong> or the
           <strong>Somerset</strong> area? Use the contact form below for
-          <strong>Taxi Enquiries</strong> or make a
-          <strong>Direct Booking</strong>.
+          <strong>Taxi Enquiries</strong>.
         </p>
       </div>
     </div>
@@ -37,7 +36,8 @@
 
       <div v-show="formCount == 0" class="contact-section contact-type">
         <fieldset>
-          <legend>What is your type of Request?</legend>
+          <legend>Make a Taxi Enquiry</legend>
+          <p>Ask for a quote, journey time &amp; availability</p>
           <div>
             <label>
               <input
@@ -49,10 +49,9 @@
                 checked
               />Enquiry</label
             >
-            - Ask for a Quote
           </div>
 
-          <div>
+          <!-- <div>
             <label>
               <input
                 id="booking"
@@ -62,7 +61,7 @@
                 value="Booking"
               />Direct Booking</label
             >
-          </div>
+          </div> -->
         </fieldset>
       </div>
 

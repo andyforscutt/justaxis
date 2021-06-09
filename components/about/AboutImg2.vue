@@ -2,13 +2,12 @@
   <picture>
     <source :srcSet="multipleSizes.srcSet" type="image/webp" />
     <source :srcSet="fallback.srcSet" type="image/jpg" />
-
     <img
       src="~/assets/about/justaxis-glastonbury-somerset-700w.jpg"
       width="700"
       height="376"
       class="polaroid"
-      alt="Justin and Dawn Miller from JusTaxis Glastonbury, Somerset"
+      alt="Justin and Dawn Miller from JusTaxis, Taxi service for Glastonbury, Street, Wells and whole of Somerset."
       loading="lazy"
     />
   </picture>

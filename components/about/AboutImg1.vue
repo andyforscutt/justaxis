@@ -9,6 +9,7 @@
       height="566"
       class="polaroid"
       alt="JusTaxis Taxi Service covering Glastonbury, Street, Wells and the whole of Somerset"
+      loading="eager"
     />
   </picture>
 </template>
