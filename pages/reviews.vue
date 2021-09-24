@@ -24,9 +24,7 @@
           <div class="col-md-6 col-lg-4">
             <ReviewImg1 />
           </div>
-        </div>
 
-        <div class="row">
           <div class="col-md-6">
             <h3>John O Reilly</h3>
             <div class="review">
