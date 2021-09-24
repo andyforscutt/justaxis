@@ -7,12 +7,7 @@
         </nuxt-link>
       </div>
 
-      <button
-        aria-label="Toggle navigation menu"
-        class="drawer-toggle"
-        :class="menuClass"
-        @click.prevent="toggle"
-      >
+      <button aria-label="Toggle navigation menu" class="drawer-toggle" :class="menuClass" @click.prevent="toggle">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -23,9 +18,10 @@
         <ul>
           <li><nuxt-link to="/">Home</nuxt-link></li>
           <li>
-            <nuxt-link to="/about-justaxis-glastonbury-somerset"
-              >About Us</nuxt-link
-            >
+            <nuxt-link to="/about-justaxis-glastonbury-somerset">About Us</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/reviews">Reviews</nuxt-link>
           </li>
           <li>
             <nuxt-link to="/contact-us">Contact Us</nuxt-link>
