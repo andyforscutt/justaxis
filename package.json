@@ -6,8 +6,8 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "export": "nuxt export",
-    "generate": "nuxt build && nuxt export",
+    "export": "nuxt generate",
+    "generate": "nuxt build && nuxt generate",
     "serve": "nuxt serve",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint": "npm run lint:js"
@@ -35,7 +35,7 @@
     "node-sass": "^4.14.1",
     "prettier": "^2.3.1",
     "responsive-loader": "^2.3.0",
-    "sass-loader": "^8.0.2",
+    "sass-loader": "^10.1.1",
     "sharp": "^0.25.4",
     "sqip-loader": "^1.0.0",
     "webp-loader": "^0.6.0"

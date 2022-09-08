@@ -24,7 +24,39 @@
           <div class="col-md-6 col-lg-4">
             <ReviewImg1 />
           </div>
+        </div>
 
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Justine Smith</h3>
+            <div class="review">
+              <LeftQuote />
+              Fantastic Service! My daughter returned home to Liverpool from Glastonbury Festival minus her mobile
+              phone, which had all her university work on it. I called JusTaxis, explained the situation. They organised
+              locating the lost mobile on an App, and within an hour had found her phone! They were so helpful and went
+              out of their way to find her phone. I cannot thank JusTaxis enough! I still can't quite believe it!
+              Amazing guys! Thank you. Everyone says what a fantastic place Glastonbury is, I believe it's because it's
+              full of fantastic people, as JusTaxis proves this.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3>Angie Cornall</h3>
+            <div class="review">
+              <LeftQuote />
+              Brilliant taxi service. Never used a taxi company around Glastonbury before and certainly struck gold with
+              this guy. Picked us up from Travelodge at specified time and was really friendly. We asked if he could
+              pick us up later but we weren't sure of a time as we were at a wedding. He said he was busy but to give
+              him a try. I phoned around 10pm and he arrived 15 minutes later. Fantastic service. He even stopped so I
+              could take a photo of the moon. Highly recommend and next time I'm in Glastonbury I will definitely use
+              again. Reasonably priced too.
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
           <div class="col-md-6">
             <h3>John O Reilly</h3>
             <div class="review">
